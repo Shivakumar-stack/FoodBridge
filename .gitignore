@@ -54,3 +54,4 @@ WiredTiger*
 *.mdb
 *.sqlite
 *.sqlite3
+docs/screenshots/
