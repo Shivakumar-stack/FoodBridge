@@ -6,6 +6,7 @@
     "start:backend": "node backend/server.js",
     "start:frontend": "npm run serve --prefix frontend",
     "start": "node backend/server.js",
+    "build": "npm install --prefix frontend && npm run build:css --prefix frontend",
     "start:all": "npm-run-all --parallel start:backend start:frontend",
     "demo": "powershell -ExecutionPolicy Bypass -File scripts/start-demo.ps1",
     "dev:backend": "nodemon backend/server.js -- --port=5001",
