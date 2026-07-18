@@ -1,170 +1,185 @@
 # FoodBridge
+**Smart Food Donation & Redistribution Platform**
 
-FoodBridge is a full-stack food donation and logistics platform that connects donors, NGOs, volunteers, and admins through a controlled donation lifecycle. The project is built as a modular monolith with an Express backend, MongoDB persistence, a vanilla JavaScript frontend, and Socket.io for live updates.
+![Node.js](https://img.shields.io/badge/Node.js-18.x-green)
+![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green)
 
-## What The Project Does
+FoodBridge is a comprehensive full-stack platform designed to bridge the gap between surplus food and those in need. Every day, large amounts of edible food are wasted at restaurants, corporate events, and hotels, while millions remain hungry. FoodBridge solves this logistical challenge by connecting food donors directly with NGOs and volunteers. 
 
-- Donors create structured food donations with pickup details and optional images.
-- NGOs browse eligible donations, claim them, and confirm receipt.
-- Volunteers only see claimed, unassigned deliveries, accept pickup tasks, and update movement status.
-- Admins monitor activity, manage logistics, and access system-wide dashboards.
-- Real-time events keep dashboards and the live map synchronized.
+By streamlining the donation process, providing live map tracking, and offering AI-driven food categorization, the platform ensures that surplus food is efficiently and safely redistributed to communities, minimizing waste and maximizing impact.
 
-## Current Technical State
+---
 
-- Browser authentication is cookie-based using an HttpOnly JWT cookie.
-- Mutation requests are protected with CSRF tokens.
-- Critical claim/status operations are transaction-safe.
-- Donation workflow is enforced by a backend state machine.
-- Hugging Face image classification is optional and falls back safely when no API key is present.
+## 🚀 Key Features
 
-## Stack
+| Feature | Description |
+|---|---|
+| **Authentication & Security** | Secure JWT-based login with session management, rate limiting, and password hashing. |
+| **Role-Based Access** | Distinct, tailored dashboard experiences for Donors, NGOs, Volunteers, and Admins. |
+| **Food Donation Management** | Donors can list surplus food, while NGOs can claim requests seamlessly. |
+| **Interactive Live Maps** | Real-time map tracking for pickups and drop-offs using geospatial data. |
+| **Real-time Notifications** | WebSocket integration for instant alerts on donation claims and delivery updates. |
+| **AI Food Classification** | Hugging Face Vision API integration to automatically categorize uploaded food images. |
+| **Cloud Media Storage** | Secure and scalable image uploads powered by Cloudinary. |
+| **Inventory Management** | Tools for NGOs to manage incoming donations and track distributions. |
 
-### Backend
+---
 
-- Node.js 18+
+## 🛠️ Technology Stack
+
+**Frontend**
+- HTML5 / CSS3
+- Vanilla JavaScript
+- Tailwind CSS
+
+**Backend**
+- Node.js
 - Express.js
-- MongoDB + Mongoose
-- Socket.io
-- Node-Cron
-- Zod environment validation
 
-### Frontend
+**Database**
+- MongoDB (Atlas)
+- Mongoose (ODM)
 
-- HTML5
-- CSS3 + Tailwind utility styling
-- Vanilla JavaScript modules
-- Chart.js
-- Leaflet
+**Key Libraries & APIs**
+- **Security:** `jsonwebtoken`, `bcryptjs`, `helmet`, `cors`
+- **Real-time:** `socket.io`
+- **Media & AI:** `cloudinary`, `multer`, Hugging Face Inference API
+- **Validation:** `zod`, `express-validator`
 
-### Security
+**Development Tools**
+- Jest (Testing)
+- ESLint & Prettier
+- Nodemon
 
-- HttpOnly auth cookie
-- CSRF protection
-- RBAC
-- Helmet
-- Rate limiting
-- HPP
-- Request validation with `express-validator`
+---
 
-## Workflow
+## 📐 System Architecture
 
-The core happy path is:
-
-`pending -> claimed -> accepted -> picked_up -> delivered -> closed`
-
-Important enforced rules:
-
-- Only NGOs can claim donations.
-- Only volunteers can accept pickups.
-- Volunteers only see claimed donations that do not already have an assigned volunteer.
-- Only the assigned volunteer can mark pickup/delivery progress.
-- Only the claiming NGO or an admin can close the final handoff.
-- Only the original donor or an admin can cancel a donation.
-
-## Project Structure
-
-- `backend/` Express server, routes, controllers, services, models, middleware.
-- `frontend/` public pages, dashboard modules, shared client utilities.
-- `tests/` project regression scripts.
-- `docs/screenshots/` screenshots for report and presentation use.
-- `scripts/` seed, maintenance, and verification scripts.
-
-## Local Setup
-
-### Prerequisites
-
-- Node.js 18 or newer
-- MongoDB connection string
-- Optional Cloudinary account for image uploads
-- Optional Hugging Face API key for image classification
-
-### Install
-
-```bash
-npm install
+```mermaid
+flowchart TD
+    Donor([Donor]) --> UI
+    NGO([NGO]) --> UI
+    Volunteer([Volunteer]) --> UI
+    UI[Frontend Client (HTML/JS/Tailwind)]
+    UI <--> |REST API & WebSockets| API[Express.js API Gateway]
+    
+    API <--> DB[(MongoDB)]
+    API --> Cloudinary[Cloudinary API (Images)]
+    API --> HuggingFace[Hugging Face API (AI)]
+    API --> Email[SMTP Email Service]
 ```
 
-If you want to use the standalone frontend tooling as well:
+---
 
-```bash
-npm install --prefix frontend
+## 📁 Folder Structure
+
+```text
+├── backend/            # Express server, controllers, models, routes, services
+├── dataset/            # Synthetic demo data for database seeding
+├── docs/               # Documentation assets and scripts
+├── frontend/           # UI pages, Tailwind CSS styles, and client scripts
+├── scripts/            # Database seeding, maintenance, and migration tools
+├── tests/              # Jest testing suite
+├── .github/            # CI/CD workflows and actions
+├── .env.example        # Environment variable template
+└── package.json        # Project dependencies and npm scripts
 ```
 
-### Configure Environment
+---
 
-Copy `.env.example` to `.env` and fill in the values you need.
+## 💻 Installation & Setup
 
-Required for the main app:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Shivakumar-stack/FoodBridge.git
+   cd FoodBridge
+   ```
 
-- `MONGO_URI`
-- `JWT_SECRET`
-- `SESSION_SECRET`
-- `CLIENT_URL`
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-Optional:
+3. **Configure Environment Variables**
+   Copy the example environment file and update it with your credentials:
+   ```bash
+   cp .env.example .env
+   ```
 
-- `CLOUDINARY_*`
-- `HUGGINGFACE_API_KEY`
+4. **Seed the Database (Optional)**
+   Load the platform with demo data for testing:
+   ```bash
+   npm run seed:demo
+   ```
 
-`MONGODB_URI` is also recognized by some maintenance scripts as an alias.
+5. **Start the Application**
+   Run both frontend and backend concurrently in development mode:
+   ```bash
+   npm run dev
+   ```
 
-### Run
+---
 
-Backend-served app:
+## ⚙️ Environment Variables
 
-```bash
-npm start
-```
+Required variables in `.env`:
 
-Separate dev processes:
+| Variable | Description |
+|---|---|
+| `NODE_ENV` / `PORT` | Environment mode (`development`, `production`) and backend port. |
+| `MONGO_URI` | MongoDB connection string (Local or Atlas). |
+| `JWT_SECRET` / `JWT_EXPIRE` | Configuration for signing JWT tokens. |
+| `SESSION_SECRET` | Secret key for express sessions. |
+| `CLIENT_URL` | Frontend client URL for CORS handling. |
+| `GEOCODE_*` | (Optional) Configuration for location geocoding. |
+| `CLOUDINARY_*` | (Optional) API Keys for Cloudinary image uploads. |
+| `HUGGINGFACE_API_KEY` | (Optional) API key for AI food vision. |
+| `EMAIL_*` | SMTP credentials for Nodemailer notifications. |
+| `GOOGLE_*` / `FACEBOOK_*` / `APPLE_*` | (Optional) OAuth credentials for social authentication. |
 
-```bash
-npm run start:backend
-npm run start:frontend
-```
+---
 
-Both in parallel:
+## 👥 Usage Guide
 
-```bash
-npm run start:all
-```
+- **Donor:** Register as a restaurant, hotel, or individual. Use the dashboard to create new donation listings, upload food photos, and track the status of your claims.
+- **NGO:** Browse active food donations in your area on the Live Map. Claim donations that match your capacity and track incoming deliveries.
+- **Volunteer:** View claimed donations needing transport. Accept pickup tasks and update the logistics status from "In Transit" to "Delivered."
+- **Admin:** Monitor overall platform health, manage users, and resolve support tickets.
 
-## Quality Checks
+---
 
-Lint:
+## 📸 Screenshots
 
-```bash
-npm run lint
-```
+*(Screenshots will be hosted externally and updated soon)*
 
-Regression suite:
+- **[Placeholder] Landing Page Overview**
+- **[Placeholder] Interactive Live Map**
+- **[Placeholder] NGO Dashboard & Metrics**
+- **[Placeholder] Donation Flow**
 
-```bash
-npm test
-```
+---
 
-`npm test` runs the project regression scripts in `tests/`:
+## 🔮 Future Enhancements
 
-- analytics timeline validation
-- claim race-condition validation
-- workflow authorization validation
-- browser auth/security validation
-- donation lifecycle validation
+- **Mobile App:** Native iOS/Android application for volunteers on the go.
+- **Route Optimization:** Smart routing algorithms for volunteers picking up multiple donations.
+- **Multi-language Support:** Localization to scale the platform across different regions.
+- **QR Code Verification:** Scan-to-verify functionality for secure food handoffs between donors, volunteers, and NGOs.
 
-## Documentation Set
+---
 
-- [COMPLETE_PROJECT_GUIDE.md](./COMPLETE_PROJECT_GUIDE.md): engineering walkthrough
-- [PROJECT_OVERVIEW.md](./PROJECT_OVERVIEW.md): short technical summary
-- [FoodBridge_Synopsis.md](./FoodBridge_Synopsis.md): academic synopsis
-- [ACADEMIC_PROJECT_DOCUMENTATION.md](./ACADEMIC_PROJECT_DOCUMENTATION.md): updated academic report
-- [PPT_PRESENTATION_SCRIPT.md](./PPT_PRESENTATION_SCRIPT.md): slide-by-slide demo script
+## 📄 License
 
-## Notes For Demo Use
+This project is shared as part of my software development portfolio and for educational purposes.
 
-- If `HUGGINGFACE_API_KEY` is not configured, the image analysis path will fall back to mock classification instead of failing.
-- Seed scripts create default demo data, but do not use seeded passwords outside local development.
+The source code is not licensed for redistribution, modification, or commercial use without prior permission from the author.
 
-## License
+If you would like to use any part of this project, please contact the author first.
 
-MIT
+---
+
+## ✍️ Author
+
+**Shivakumar-stack**  
+Full-Stack Developer  
+[GitHub Profile](https://github.com/Shivakumar-stack)
