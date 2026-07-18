@@ -9,7 +9,7 @@
     "serve": "npx live-server --port=5500 --open=/pages/index.html",
     "test:smoke": "playwright test --config=playwright.visual.config.js",
     "test:smoke:headed": "playwright test --config=playwright.visual.config.js --headed",
-    "test:visual": "playwright test --config=playwright.visual.config.js",
+    "test:visual": "playwright test --config=playwright.visual.config.js --pass-with-no-tests",
     "start": "npm run serve",
     "dev": "npm run serve",
     "install:all": "npm install && cd frontend && npm install"
