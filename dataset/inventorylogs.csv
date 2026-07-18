@@ -1,0 +1,61 @@
+_id,mealServer,donationId,itemName,category,quantity,unit,operationType,loggedBy,city,notes,createdAt
+6191898bf2813b210ebff32d,172ba2eb3223f140027d1c61,69c08a3ebb1f363bb7cd6fb7,Pulao with Raita,Cooked Food,56,servings,spoiled,6824fda0d2144bf0d3240bd4,Belgaum,,2026-02-15T10:02:32.866Z
+ba8570a9742c7af627b5f3c3,b4698e11cccf412bb9c83072,3fe81d2f50f297ca7dc8b854,Biscuit Packets,Packaged,39,packets,received,7d27e8062de9ae0bcb14d7ab,Gulbarga,Emergency supply,2026-04-30T04:49:31.891Z
+dea30862ae466804a4d6d270,638627d1c9e8cbdbf6f19481,010a2bb1dbbe9c4fd22fa48b,Vegetable Biryani,Cooked Food,21,servings,transferred,6824fda0d2144bf0d3240bd4,Belgaum,Transferred to branch,2026-03-03T20:00:11.381Z
+5d6d83e37ad64d887cd4b75c,ae1fc4dd94ab2418b6aebe28,c57562eadc5e4c66652171fd,Bananas,Fruits,14,dozen,consumed,c773c75663c588ad7ab910b9,Hubli,Consumed for daily meals,2026-02-22T20:47:09.157Z
+4e11be966d33602223278bd7,dcb46190c710cd30c75380f5,91b83df59748a0d7b6f71bf1,Curd Rice,Cooked Food,99,bowls,received,398b9f6084af42e571e303c1,Raichur,,2026-02-13T21:36:51.667Z
+edc678b0f72f00c35f528280,82a3800104cefbdd0c798c75,605286da27ebba0350f04abf,Bananas,Fruits,70,dozen,received,a6ca14f81606d5bd15bb6901,Davanagere,Emergency supply,2026-04-16T09:57:03.278Z
+c7172f0b9c5eb00c4629e6fd,0b1ace48a83538d10c225ddb,0356ae74ec93a65cef2374c1,Milk Packets,Dairy,73,packets,transferred,0d36db5bd39fbe8e225b89f1,Bangalore,Monthly stock,2026-01-13T10:54:57.773Z
+aa2327119c6bbb47b327776f,9492684e92fa113351f1d958,b4a551f42171c032adf83936,Toor Dal 2kg,Raw Ingredients,30,packets,spoiled,c2d7bfd84f7dcfdefde59f01,Bangalore,Monthly stock,2026-04-08T19:13:26.536Z
+13bb48b2c934a6055a0929ef,35acebf4c99c9950d7f36d8e,336278c4af4259a61bf1cb6b,Paneer Blocks,Dairy,86,blocks,consumed,c773c75663c588ad7ab910b9,Hubli,Consumed for daily meals,2026-02-03T05:00:42.234Z
+4ff96c7070866e05657a9e9e,aa21a02dad1c4fbbd39bb123,172259396bd5409bd2c0bd18,Biscuit Packets,Packaged,71,packets,spoiled,6802704c9cfdca5055660608,Mangalore,Monthly stock,2026-04-29T00:10:36.905Z
+854f57fb3b8567f6b14a66a0,d27b0a774b6e658e68fdab98,780ab019bff33102e2abc0ee,Paneer Blocks,Dairy,23,blocks,spoiled,6802704c9cfdca5055660608,Mangalore,Emergency supply,2026-03-08T07:59:33.416Z
+71fbed86647eddd526c4919a,ae1fc4dd94ab2418b6aebe28,2f3abc225b41ef60a3e0f066,Curd Rice,Cooked Food,93,bowls,spoiled,20c888892262b8d3eaac4864,Shimoga,Spoiled due to delay,2026-04-09T12:15:56.491Z
+00a50037c64ccec3606dfb50,85bc35e22f7b58c1ac324fa0,72154898835d21cf6552fc75,Buttermilk 1L,Beverages,98,bottles,consumed,ea597221d2015802ab98757f,Mangalore,Spoiled due to delay,2026-02-14T21:22:54.319Z
+68fbc06b99a4b9074d6a563c,367315dd9aa85bc64700907b,7f4cc1062fd8b819ebe0e252,Wheat Flour 10kg,Raw Ingredients,79,bags,consumed,20c888892262b8d3eaac4864,Shimoga,Monthly stock,2026-04-28T11:01:57.308Z
+8ff7504ecac39568b43edbd5,6594b56af46860a01bf956c5,ef6ae0a4273b8f04d8722168,Roti with Sabzi,Cooked Food,68,plates,consumed,20c888892262b8d3eaac4864,Shimoga,Emergency supply,2026-03-28T17:01:16.270Z
+581964540a1ae1a9351302be,c810d22e09ce60fa36e710ab,8956c4e5f961f5e89d9a4ce4,Pulao with Raita,Cooked Food,56,servings,consumed,24dca00547f82843a086a63c,Belgaum,,2026-01-12T07:48:24.917Z
+a4048409c41610ad802bdcf7,0df241f87d7c4b4a07cc7c1c,feca19411b7279cd9564c774,Paneer Butter Masala,Cooked Food,71,servings,spoiled,ea597221d2015802ab98757f,Mangalore,,2026-05-07T22:32:41.386Z
+aac9931069f17e8d169d2465,e1c62290399e3d662312edea,312fa352e6a818c05cf76a20,Chapati with Dal,Cooked Food,33,plates,received,0d36db5bd39fbe8e225b89f1,Bangalore,Consumed for daily meals,2026-02-15T20:08:47.169Z
+2e4474a8d5022f710a4d8cb0,bd3b569ecfe702c3e782bc57,e1be617f33ed793e8fea3aba,Biscuit Packets,Packaged,49,packets,spoiled,a6ca14f81606d5bd15bb6901,Davanagere,Spoiled due to delay,2026-03-18T01:38:19.103Z
+cbf3403c71cd64c2dbf23411,35acebf4c99c9950d7f36d8e,f45051ea34904a6356f0c408,Mixed Vegetables,Vegetables,34,kg,received,c2d7bfd84f7dcfdefde59f01,Bangalore,Regular intake,2026-02-02T11:04:14.021Z
+11f8e2ee94efc2beea76644a,7fce9496e6f21626f042cff4,293db172fbddc817302fd9fe,Rice Bags 5kg,Raw Ingredients,16,bags,spoiled,bc06576f75cccafbef4fc17f,Mysore,Emergency supply,2026-03-31T10:43:54.743Z
+ea69f06dc56cf670367caab7,367315dd9aa85bc64700907b,8fe0e5f6bb4a5f3a84ea540f,Onions,Vegetables,70,kg,received,4bf3b3b05e5afde576fb66ad,Mysore,Emergency supply,2026-03-16T17:36:54.220Z
+487fc8108c62ac15a7274087,709525f2864211812fd064f7,44ed096483311a70b8b4aa50,Chapati with Dal,Cooked Food,68,plates,received,6802704c9cfdca5055660608,Mangalore,Spoiled due to delay,2026-02-15T00:12:06.905Z
+b490cf66151749666fbb1866,797306f0288adf5508230aaa,58b640ac25ae1ad2dcc56f20,Sambar Rice,Cooked Food,78,servings,spoiled,4bf3b3b05e5afde576fb66ad,Mysore,,2026-04-27T17:58:29.624Z
+73df24df3f3ffac1073703fb,dc6b15f25c6e537cf916a681,a89de97642c8c3e35a7dfd2d,Mixed Vegetables,Vegetables,89,kg,transferred,6824fda0d2144bf0d3240bd4,Belgaum,,2026-03-09T15:22:00.729Z
+364f94694a7c9793a45148e3,51ee294d399f64eba6a2afb7,513c380a8c25f2543f141e9c,Rice Bags 5kg,Raw Ingredients,59,bags,transferred,ea597221d2015802ab98757f,Mangalore,Monthly stock,2026-03-16T13:49:46.984Z
+4072acb79763c5252431c180,104943f702775a77f5bac3c5,e09a78182f04ee834d9cca9b,Juice Tetra Packs,Beverages,73,packs,transferred,6824fda0d2144bf0d3240bd4,Belgaum,Spoiled due to delay,2026-04-07T01:04:36.032Z
+0e2eae472d30545ca2023eee,6594b56af46860a01bf956c5,87e79ccb8ddbc15a0b432059,Chapati with Dal,Cooked Food,93,plates,transferred,959ca5c0337bf46dc1fe18d2,Udupi,Spoiled due to delay,2026-02-22T09:48:02.269Z
+25fc47f6a0ac56529580420c,dc6b15f25c6e537cf916a681,ee28e49649dc71bb1743ba80,Onions,Vegetables,80,kg,spoiled,c773c75663c588ad7ab910b9,Hubli,Regular intake,2026-03-07T21:52:14.720Z
+1ae3aeeeff1956556d3c6a41,51ee294d399f64eba6a2afb7,412757ee896bd7ca48ca1aab,Tomatoes,Vegetables,46,kg,received,7d27e8062de9ae0bcb14d7ab,Gulbarga,Emergency supply,2026-04-16T05:31:03.655Z
+5265d5aaf132e7948f4f01bb,b6476be316a6d572341f7c7a,30903a8c59cb6e278d86ae65,Paneer Blocks,Dairy,35,blocks,consumed,6824fda0d2144bf0d3240bd4,Belgaum,Transferred to branch,2026-04-10T09:32:41.258Z
+7c651009fc862c2a510aece3,9cc6a897ed1c8773592e26a6,f4f365927eb284ef1e7d28ac,Buttermilk 1L,Beverages,86,bottles,spoiled,6824fda0d2144bf0d3240bd4,Belgaum,,2026-03-22T04:07:09.636Z
+4c614de668fd1409ad14a355,e1c62290399e3d662312edea,0a75d86cdd5fede5e7009bc4,Vegetable Biryani,Cooked Food,100,servings,received,959ca5c0337bf46dc1fe18d2,Udupi,Spoiled due to delay,2026-05-03T23:35:30.635Z
+c3a7dc4e85f7312943a0f89c,167f926b18170329db51826b,92914e9d89fa01cedd749247,Juice Tetra Packs,Beverages,63,packs,spoiled,c2d7bfd84f7dcfdefde59f01,Bangalore,Spoiled due to delay,2026-04-21T04:58:51.298Z
+440dafff42b59b6a464f4e3a,709525f2864211812fd064f7,e203b32c2cacd3b3a76072d2,Paneer Blocks,Dairy,9,blocks,consumed,24dca00547f82843a086a63c,Belgaum,Spoiled due to delay,2026-03-08T17:46:16.671Z
+2c67057bfdd38a7c613f00b5,104943f702775a77f5bac3c5,e194e8bd68e3fc826ecfa09f,Juice Tetra Packs,Beverages,78,packs,received,0d36db5bd39fbe8e225b89f1,Bangalore,Transferred to branch,2026-05-01T21:39:27.872Z
+cbf8e2ecbf122733188f53f5,9492684e92fa113351f1d958,3967c905e0344c9a95b154fc,Biscuit Packets,Packaged,98,packets,consumed,6824fda0d2144bf0d3240bd4,Belgaum,Emergency supply,2026-04-05T10:15:13.232Z
+5607d28d2d630f7d05c7deb9,3f3b8ebc7c1b7e684c98e6ea,a4ebb095291a04f3f37b6669,Tomatoes,Vegetables,14,kg,spoiled,a6ca14f81606d5bd15bb6901,Davanagere,,2026-01-31T04:43:13.853Z
+bedc5859b8b693d65d537e5d,84b6126e1ce56568864bb577,3e02b904317d047804a6afda,Curd Rice,Cooked Food,59,bowls,spoiled,a6ca14f81606d5bd15bb6901,Davanagere,Monthly stock,2026-04-10T02:57:55.035Z
+ddf70a7da8f0dab92434ea05,7dd38c7c0eeb912822034c5c,e9d99a0fbdb35f4be9e4b75f,Pulao with Raita,Cooked Food,88,servings,spoiled,a6ca14f81606d5bd15bb6901,Davanagere,Spoiled due to delay,2026-04-29T17:18:57.584Z
+e580df8b83e88d6625007c92,82a3800104cefbdd0c798c75,7dc9ec9678fced8efcbd43ae,Bread Loaves,Baked Goods,10,loaves,transferred,959ca5c0337bf46dc1fe18d2,Udupi,Spoiled due to delay,2026-02-28T07:36:58.475Z
+f175bb800a655cb981cd3597,d032315565a43620e7674bc6,2f193b5b79d8266da70a6271,Idli Vada Combo,Cooked Food,51,plates,received,24dca00547f82843a086a63c,Belgaum,Emergency supply,2026-02-16T18:07:35.252Z
+038a9ac044f55716fdae93ec,dc6b15f25c6e537cf916a681,b0c6e1ee80b0087a6bb54a63,Paneer Butter Masala,Cooked Food,78,servings,consumed,24dca00547f82843a086a63c,Belgaum,Spoiled due to delay,2026-01-21T04:57:54.107Z
+91adb0f93fc68ccada1c4a1f,0df241f87d7c4b4a07cc7c1c,0f82300968fd796cbb09f241,Paneer Blocks,Dairy,57,blocks,consumed,a6ca14f81606d5bd15bb6901,Davanagere,,2026-04-22T16:36:46.185Z
+7d1159d3dc137bc568e49029,d032315565a43620e7674bc6,d754362e8576995da1e289e0,Bread Loaves,Baked Goods,82,loaves,transferred,7d27e8062de9ae0bcb14d7ab,Gulbarga,,2026-03-10T21:47:01.193Z
+33d3b7161d35efa3be3fd1c2,5eb2275f235e0b9715b5f46b,ced21d84b3d2f86b76c8a6d5,Cooking Oil 5L,Raw Ingredients,28,cans,received,6824fda0d2144bf0d3240bd4,Belgaum,Emergency supply,2026-01-20T17:10:29.073Z
+d57925e8a73b6e872e7aced8,8f5d7aa206dc9e485224d152,5be1ebd0031ee499c166562b,Bread Loaves,Baked Goods,64,loaves,received,c2d7bfd84f7dcfdefde59f01,Bangalore,Regular intake,2026-05-03T09:43:15.989Z
+e38c9754dfec82c457468672,104943f702775a77f5bac3c5,c5c47e6a02b2032c04c2b671,Pulao with Raita,Cooked Food,95,servings,received,4bf3b3b05e5afde576fb66ad,Mysore,Transferred to branch,2026-01-13T22:43:31.649Z
+583bdf06138510b92038d086,8391a10f38665079b4288ef1,5f775f2b72089205b0e8d8f2,Pulao with Raita,Cooked Food,27,servings,consumed,398b9f6084af42e571e303c1,Raichur,Consumed for daily meals,2026-04-07T11:24:05.135Z
+0b8f27fa9b58c43e0d56c242,51ee294d399f64eba6a2afb7,c1a8bc5afe2563d28d397b32,Wheat Flour 10kg,Raw Ingredients,76,bags,consumed,20c888892262b8d3eaac4864,Shimoga,,2026-04-13T07:47:06.839Z
+04fbb3912eaf5ca97ed0d517,dc6b15f25c6e537cf916a681,ac1cb349970c53234adaaa6d,Paneer Butter Masala,Cooked Food,53,servings,consumed,7d27e8062de9ae0bcb14d7ab,Gulbarga,Monthly stock,2026-02-13T13:30:36.186Z
+be4637bef10d266c233fd1f0,b41fdde62e0002fc32fd3f95,78d5424c0725a00ca490f6ae,Milk Packets,Dairy,91,packets,received,7d27e8062de9ae0bcb14d7ab,Gulbarga,Spoiled due to delay,2026-03-13T09:22:22.185Z
+39c2c400f398d6312a7a2004,9cc6a897ed1c8773592e26a6,3aaca25d17aa4563fed6031d,Idli Vada Combo,Cooked Food,54,plates,consumed,959ca5c0337bf46dc1fe18d2,Udupi,Consumed for daily meals,2026-01-29T09:47:26.392Z
+fce6bff6f290d9dd2ab8121c,35acebf4c99c9950d7f36d8e,d08f182b2ec7da2d0a6d36f2,Pulao with Raita,Cooked Food,6,servings,consumed,24dca00547f82843a086a63c,Belgaum,Emergency supply,2026-02-19T12:55:14.170Z
+2a5c0f00b335ccf2c6692de0,aa21a02dad1c4fbbd39bb123,fd0d3903bdda1a036e5b4c74,Sambar Rice,Cooked Food,75,servings,spoiled,a6ca14f81606d5bd15bb6901,Davanagere,Consumed for daily meals,2026-04-07T09:30:30.364Z
+58de1f0efa03f8547e6c5bd9,a237bda0aa00068933c0a8df,59475fddc479b122de0694aa,Apples,Fruits,38,kg,consumed,4bf3b3b05e5afde576fb66ad,Mysore,,2026-02-05T06:46:00.571Z
+7d9a1a0bc5f707afd1395199,5c78b8f50ddfea1c708c7397,354645b7ffa461af5f18941b,Vegetable Biryani,Cooked Food,14,servings,received,7d27e8062de9ae0bcb14d7ab,Gulbarga,Consumed for daily meals,2026-03-04T05:06:42.670Z
+910f8df9b151ffc194bc521e,a7af6f8931da1bcbfad6bc62,94aa8373e1037f685c4ef84a,Chapati with Dal,Cooked Food,11,plates,spoiled,20c888892262b8d3eaac4864,Shimoga,Consumed for daily meals,2026-03-29T09:25:20.870Z
+10fae777abfd4efeb4f6533a,51ee294d399f64eba6a2afb7,0b823f8946388e3970a81f0b,Roti with Sabzi,Cooked Food,88,plates,consumed,6824fda0d2144bf0d3240bd4,Belgaum,Spoiled due to delay,2026-01-05T13:53:16.096Z
+efd320611fbfc00474d86c03,3fb3f50a1d193465f84fd32c,2a4208aaef39fd9b01788294,Buttermilk 1L,Beverages,72,bottles,consumed,ea597221d2015802ab98757f,Mangalore,Transferred to branch,2026-04-26T00:56:01.655Z

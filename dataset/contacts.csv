@@ -1,0 +1,56 @@
+_id,name,email,subject,message,type,status,createdAt
+32529a5df2b256a61c7eebfe,Harish Naidu,harish.naidu0@gmail.com,Media Inquiry,We are writing an article about food waste reduction initiatives.,general,read,2026-02-28T03:33:44.228Z
+8e9922abf2ac8dcdd8ea71ce,Priya Gupta,priya.gupta1@gmail.com,Media Inquiry,We are writing an article about food waste reduction initiatives.,general,new,2026-01-25T04:07:19.582Z
+bef8a525b4645915341e4993,Usha Iyer,usha.iyer2@gmail.com,Media Inquiry,We are writing an article about food waste reduction initiatives.,general,read,2026-02-04T08:07:33.429Z
+db8bfe188f902edae30a775e,Lakshmi Sharma,lakshmi.sharma3@gmail.com,Feedback,Great platform! The live map feature is very helpful.,general,resolved,2026-04-16T14:24:53.269Z
+4e6903e34436f690517df509,Shilpa Kudva,shilpa.kudva4@gmail.com,Corporate Partnership,Our company wants to donate surplus cafeteria food daily.,partnership,read,2026-01-31T08:21:04.710Z
+bc075ab4589210eb026011ba,Karthik Sharma,karthik.sharma5@gmail.com,Donation Question,How do I schedule a recurring donation pickup?,general,new,2026-04-07T04:00:39.064Z
+53e54a17ef0d4d7b6f5d719f,Kavita Acharya,kavita.acharya6@gmail.com,Volunteer Inquiry,I would like to volunteer for food delivery in my area.,volunteer_inquiry,replied,2026-03-22T12:34:56.409Z
+13e0b148d0833c781bba050e,Meenakshi Amin,meenakshi.amin7@gmail.com,Food Safety Concern,What temperature controls are used during transport?,general,new,2026-04-22T00:21:46.474Z
+e76b1e52cdfec7c4737e6966,Suresh Kumar,suresh.kumar8@gmail.com,General Inquiry,What areas does FoodBridge currently serve in Karnataka?,general,resolved,2026-02-20T11:56:04.387Z
+c7034354ab4c104e8384c5d8,Venkat Iyer,venkat.iyer9@gmail.com,Food Safety Concern,What temperature controls are used during transport?,general,resolved,2026-03-29T15:43:57.316Z
+58d3bbdab15d888fe9397aee,Divya Shenoy,divya.shenoy10@gmail.com,Corporate Partnership,Our company wants to donate surplus cafeteria food daily.,partnership,new,2026-03-26T20:31:27.595Z
+6fedf6ac99373f44f1f1bdd4,Priya Swamy,priya.swamy11@gmail.com,General Inquiry,What areas does FoodBridge currently serve in Karnataka?,general,read,2026-01-26T04:18:31.845Z
+6f0cc3efa7a0968d6c5ae817,Prakash Sharma,prakash.sharma12@gmail.com,Donation Question,How do I schedule a recurring donation pickup?,general,resolved,2026-04-06T22:33:44.103Z
+a484d50165b3440e332cb141,Naveen Prasad,naveen.prasad13@gmail.com,Food Safety Concern,What temperature controls are used during transport?,general,resolved,2026-01-11T07:39:19.559Z
+9cc04c54b54d0f4397070cfe,Ramesh Shetty,ramesh.shetty14@gmail.com,Technical Support,I cannot update my profile information on the dashboard.,general,replied,2026-03-08T21:25:05.915Z
+b4f3d183fe200ca3b638e8e0,Anil Pai,anil.pai15@gmail.com,Food Safety Concern,What temperature controls are used during transport?,general,resolved,2026-02-06T17:25:34.561Z
+efe618fd77b47b298e302dfd,Deepa Joshi,deepa.joshi16@gmail.com,General Inquiry,What areas does FoodBridge currently serve in Karnataka?,general,new,2026-05-03T20:06:32.075Z
+11c241c29cb09bb4edcd6602,Arun Reddy,arun.reddy17@gmail.com,Feedback,Great platform! The live map feature is very helpful.,general,replied,2026-02-09T21:24:28.382Z
+bfc9ad1ae283e6a9d83d5c1c,Divya Rao,divya.rao18@gmail.com,Feedback,Great platform! The live map feature is very helpful.,general,replied,2026-04-01T10:15:19.760Z
+8057e29a494762b402f0aab8,Vikram Acharya,vikram.acharya19@gmail.com,General Inquiry,What areas does FoodBridge currently serve in Karnataka?,general,replied,2026-03-03T20:44:07.646Z
+cb834fc468ff80da7529590c,Santosh Kulkarni,santosh.kulkarni20@gmail.com,Food Safety Concern,What temperature controls are used during transport?,general,new,2026-03-01T17:25:10.907Z
+5ea0a66497465cc29c9d786c,Shilpa Pai,shilpa.pai21@gmail.com,Feedback,Great platform! The live map feature is very helpful.,general,read,2026-01-07T14:50:12.251Z
+6bbb1f9cbb16508430405718,Nagaraj Naidu,nagaraj.naidu22@gmail.com,Feedback,Great platform! The live map feature is very helpful.,general,read,2026-01-13T05:03:39.566Z
+920064f16298959a930c5252,Ashok Devi,ashok.devi23@gmail.com,Donation Question,How do I schedule a recurring donation pickup?,general,read,2026-02-05T19:18:09.499Z
+7536d6f58c4fb26a759c1708,Shilpa Reddy,shilpa.reddy24@gmail.com,Delivery Issue,My last delivery was delayed by 3 hours.,general,read,2026-01-06T15:45:44.416Z
+9ebb05303e5a7cc87c135e32,Rekha Patel,rekha.patel25@gmail.com,Technical Support,I cannot update my profile information on the dashboard.,general,resolved,2026-03-16T08:02:37.494Z
+de656e9cd91a7f8b018238fd,Mohan Kamath,mohan.kamath26@gmail.com,Food Safety Concern,What temperature controls are used during transport?,general,new,2026-03-25T15:19:15.612Z
+c889f0381d977f6fe4d7636a,Meera Nair,meera.nair27@gmail.com,Food Safety Concern,What temperature controls are used during transport?,general,resolved,2026-02-12T16:38:37.584Z
+4a884aff3881ddc4895f4060,Vinay Kulkarni,vinay.kulkarni28@gmail.com,Food Safety Concern,What temperature controls are used during transport?,general,read,2026-04-03T06:16:08.719Z
+92d71016ae08d2b6a362cead,Shobha Menon,shobha.menon29@gmail.com,Technical Support,I cannot update my profile information on the dashboard.,general,read,2026-01-10T13:34:01.171Z
+59dbe6e5dee8f079dc4cc55c,Sanjay Reddy,sanjay.reddy30@gmail.com,Corporate Partnership,Our company wants to donate surplus cafeteria food daily.,partnership,resolved,2026-01-11T02:04:54.444Z
+5f0001fd633cb45e3d78b7de,Rohit Hegde,rohit.hegde31@gmail.com,Donation Question,How do I schedule a recurring donation pickup?,general,read,2026-05-03T21:42:25.959Z
+3254369557d0e63ac6b383a9,Rahul Kudva,rahul.kudva32@gmail.com,Media Inquiry,We are writing an article about food waste reduction initiatives.,general,resolved,2026-01-05T07:21:48.700Z
+d79ce99d098a3af76daed3ea,Nisha Kudva,nisha.kudva33@gmail.com,Partnership Proposal,Our organization is interested in partnering with FoodBridge.,partnership,replied,2026-02-27T12:11:57.918Z
+4907579e5e4cee43ccb7a272,Rohit Hegde,rohit.hegde34@gmail.com,Volunteer Inquiry,I would like to volunteer for food delivery in my area.,volunteer_inquiry,new,2026-04-07T13:16:11.805Z
+a042a983c24653f329e03e6b,Priya Kumar,priya.kumar35@gmail.com,Delivery Issue,My last delivery was delayed by 3 hours.,general,read,2026-04-19T22:16:51.092Z
+2c90512efaad60b7eef963b9,Ashok Joshi,ashok.joshi36@gmail.com,Partnership Proposal,Our organization is interested in partnering with FoodBridge.,partnership,replied,2026-01-31T12:30:52.219Z
+7ab748352aeffb714cab04c2,Swathi Acharya,swathi.acharya37@gmail.com,General Inquiry,What areas does FoodBridge currently serve in Karnataka?,general,new,2026-02-14T02:44:00.004Z
+681402550198fb0acc31b79c,Amit Gowda,amit.gowda38@gmail.com,Corporate Partnership,Our company wants to donate surplus cafeteria food daily.,partnership,replied,2026-03-07T11:56:56.281Z
+a4d99f4eefe501dcd8a5d0d5,Anil Acharya,anil.acharya39@gmail.com,General Inquiry,What areas does FoodBridge currently serve in Karnataka?,general,new,2026-05-07T14:34:31.008Z
+bcd317ac2aac9ea7eed57d15,Savita Nair,savita.nair40@gmail.com,Donation Question,How do I schedule a recurring donation pickup?,general,new,2026-04-30T06:52:22.247Z
+2ee703029949bba447f492ac,Sunita Nair,sunita.nair41@gmail.com,General Inquiry,What areas does FoodBridge currently serve in Karnataka?,general,replied,2026-01-06T21:43:46.928Z
+b7184bacc989b20672272660,Prasad Acharya,prasad.acharya42@gmail.com,Food Safety Concern,What temperature controls are used during transport?,general,replied,2026-01-14T03:13:49.705Z
+e1ca5658ab2525ace0989ac7,Girish Patel,girish.patel43@gmail.com,General Inquiry,What areas does FoodBridge currently serve in Karnataka?,general,replied,2026-03-02T08:29:13.819Z
+7d2a44732589828f927c3d95,Vasudha Devi,vasudha.devi44@gmail.com,Feedback,Great platform! The live map feature is very helpful.,general,resolved,2026-05-06T19:24:14.786Z
+ea7acbe67f676d5e5276904d,Mahesh Reddy,mahesh.reddy45@gmail.com,General Inquiry,What areas does FoodBridge currently serve in Karnataka?,general,resolved,2026-05-01T02:04:28.732Z
+97ec9f43d1e29db621302ae0,Karthik Kudva,karthik.kudva46@gmail.com,Partnership Proposal,Our organization is interested in partnering with FoodBridge.,partnership,read,2026-03-06T01:31:48.669Z
+e4f9e6d545bae57676992f3b,Jyothi Kudva,jyothi.kudva47@gmail.com,Media Inquiry,We are writing an article about food waste reduction initiatives.,general,replied,2026-04-18T17:27:05.463Z
+afe9832e6b0b724eeebc3e77,Santosh Patel,santosh.patel48@gmail.com,Delivery Issue,My last delivery was delayed by 3 hours.,general,new,2026-03-05T21:29:34.272Z
+8806850b36d6c06525459fe8,Ramesh Verma,ramesh.verma49@gmail.com,Delivery Issue,My last delivery was delayed by 3 hours.,general,resolved,2026-03-30T05:47:42.566Z
+6405c84ea11cddb4a4f38d7f,Meera Prasad,meera.prasad50@gmail.com,Delivery Issue,My last delivery was delayed by 3 hours.,general,new,2026-05-04T06:34:39.213Z
+15dbcd642e383f8a3178c356,Aruna Kudva,aruna.kudva51@gmail.com,Delivery Issue,My last delivery was delayed by 3 hours.,general,read,2026-04-25T12:10:28.817Z
+f0fd2210d93ab6225bd84fd7,Anil Verma,anil.verma52@gmail.com,Donation Question,How do I schedule a recurring donation pickup?,general,replied,2026-04-21T03:13:35.638Z
+0cc30b6367c48cb312326aa1,Abdul Sharma,abdul.sharma53@gmail.com,Donation Question,How do I schedule a recurring donation pickup?,general,replied,2026-03-28T14:26:44.214Z
+5be672c45fc0a53680c75f92,Girish Iyer,girish.iyer54@gmail.com,Food Safety Concern,What temperature controls are used during transport?,general,resolved,2026-04-25T20:33:07.852Z

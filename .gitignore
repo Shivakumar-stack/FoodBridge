@@ -1,0 +1,56 @@
+node_modules/
+.env
+.DS_Store
+logs/
+*.log
+repository-files.txt
+/dist
+/build
+frontend/playwright-report-smoke/
+frontend/test-results/
+frontend/test-results-playwright/
+frontend/ui-snapshots/
+
+# Temporary and local test scripts
+update_layout.js
+update_topbar.js
+check-admin.js
+check-env.js
+create-test-users.js
+test-login.js
+test-password.js
+tmp_*.js
+tmp_*.py
+eslint.*
+
+# Data
+dummy_data/
+
+# Generated Output
+frontend/styles/styles.css
+
+# Backup
+backup_junk/
+
+# Repository Clean-up Additions
+scratch/
+.agents/
+.codex/
+documentation.md
+.env.local
+.env.*.local
+playwright-report/
+test-results-playwright/
+coverage/
+backend/uploads/
+
+# New Additions
+.claude/
+data/
+*.wt
+WiredTiger*
+*.lock
+*.turtle
+*.mdb
+*.sqlite
+*.sqlite3

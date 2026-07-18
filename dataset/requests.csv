@@ -1,0 +1,59 @@
+_id,ngoId,ngoName,foodNeeded,quantity,location,urgency,status,notes,createdAt
+9323858a955d9be467f23621,7d27e8062de9ae0bcb14d7ab,No Food Waste Bangalore,Fruits and milk,202 servings,Peenya Industrial Area Gulbarga,high,pending,Daily distribution,2026-02-11T17:53:04.845Z
+76b58046c1c273d3b080200a,959ca5c0337bf46dc1fe18d2,Wipro Cares,Cooked meals for 50,199 servings,Sarjapur Road Udupi,medium,fulfilled,,2026-05-05T07:43:30.543Z
+3e77f200942afdf9d7ec11d4,24dca00547f82843a086a63c,HelpAge India Karnataka,Baby food and milk,56 servings,Sarjapur Road Belgaum,critical,rejected,School lunch program,2026-05-02T05:54:51.892Z
+7388c9d325c5342beb0cf42b,ea597221d2015802ab98757f,Namma Ooru Foundation,Baby food and milk,54 servings,Koramangala 5th Block Mangalore,critical,fulfilled,Orphanage meals,2026-02-23T07:14:34.048Z
+426cc1e78b4c5ba392a1459b,ea597221d2015802ab98757f,Namma Ooru Foundation,Baby food and milk,189 servings,HSR Layout Sector 2 Mangalore,low,approved,Old age home,2026-04-14T09:39:25.271Z
+ff92e61006d58f5ca7ce5689,398b9f6084af42e571e303c1,Roti Bank Karnataka,Protein-rich meals,202 servings,Residency Road Raichur,low,rejected,Orphanage meals,2026-04-21T18:29:42.523Z
+99f8085b4352a02f17035732,0d36db5bd39fbe8e225b89f1,Food For All Trust,Protein-rich meals,122 servings,Kengeri Main Road Bangalore,high,rejected,For shelter residents,2026-03-16T14:58:23.827Z
+da04b74f7d3d73aecb2659dd,6802704c9cfdca5055660608,Annapoorna Trust,Mixed food packages,97 servings,Whitefield Main Road Mangalore,critical,pending,School lunch program,2026-02-11T10:00:03.083Z
+1b4802e43bc57fca1f7683df,4bf3b3b05e5afde576fb66ad,Bangalore Baptist Hospital Kitchen,Baby food and milk,55 servings,Koramangala 5th Block Mysore,high,approved,Street children feeding,2026-03-20T11:30:47.879Z
+e9bdda370fbc7b9065d050ec,398b9f6084af42e571e303c1,Roti Bank Karnataka,Protein-rich meals,180 servings,Peenya Industrial Area Raichur,low,fulfilled,Community kitchen,2026-01-30T10:59:34.763Z
+c291ffcc8dba49b274ebe6de,4bf3b3b05e5afde576fb66ad,Bangalore Baptist Hospital Kitchen,Cooked meals for 50,135 servings,Yeshwanthpur Circle Mysore,critical,pending,Street children feeding,2026-04-04T03:47:35.876Z
+0a6fd98ebd27dc343869eb45,398b9f6084af42e571e303c1,Roti Bank Karnataka,Fruits and milk,62 servings,Commercial Street Raichur,high,pending,,2026-02-08T14:51:00.546Z
+4048c65d3855ef0f98db44ed,0d36db5bd39fbe8e225b89f1,Food For All Trust,Breakfast items,223 servings,Residency Road Bangalore,medium,pending,School lunch program,2026-03-15T23:25:45.575Z
+172ca271f10d99ef7a510fc2,20c888892262b8d3eaac4864,Infosys Foundation,Fruits and milk,159 servings,Yelahanka New Town Shimoga,high,pending,Emergency relief,2026-03-07T20:21:46.085Z
+71e4108fee350dbbf78c0353,959ca5c0337bf46dc1fe18d2,Wipro Cares,Chapati and vegetables,91 servings,Hebbal Main Road Udupi,low,pending,Community kitchen,2026-04-10T04:24:02.170Z
+0999d2ef3a5bf678bbc6fb8d,c773c75663c588ad7ab910b9,Robin Hood Army Karnataka,Breakfast items,185 servings,Indiranagar 100ft Road Hubli,low,approved,Old age home,2026-02-21T13:23:43.099Z
+98d8635a7594b82d7a24e4a1,6802704c9cfdca5055660608,Annapoorna Trust,Mixed food packages,63 servings,Sarjapur Road Mangalore,medium,approved,Emergency relief,2026-02-19T01:43:46.229Z
+d1fc20948b2301903a297c18,6802704c9cfdca5055660608,Annapoorna Trust,Complete thali meals,143 servings,Race Course Road Mangalore,low,pending,School lunch program,2026-02-13T12:19:03.356Z
+0e78b5b7aadd1d1ef761505a,4bf3b3b05e5afde576fb66ad,Bangalore Baptist Hospital Kitchen,Breakfast items,134 servings,Race Course Road Mysore,high,fulfilled,Emergency relief,2026-05-07T01:25:18.956Z
+b471c4cc3669175a3c8e7801,7d27e8062de9ae0bcb14d7ab,No Food Waste Bangalore,Breakfast items,287 servings,Bannerghatta Road Gulbarga,high,approved,Community kitchen,2026-03-13T10:03:31.781Z
+812b6b948373dc696b3ab131,398b9f6084af42e571e303c1,Roti Bank Karnataka,Cooked meals for 50,98 servings,Bannerghatta Road Raichur,critical,pending,School lunch program,2026-03-01T11:56:04.609Z
+20997858d59210688fb4d0d6,a6ca14f81606d5bd15bb6901,Iskcon Food Relief,Cooked meals for 50,272 servings,Basaveshwaranagar Main Road Davanagere,high,fulfilled,,2026-04-21T08:38:23.826Z
+ba7b0b351e92a8b10047758f,398b9f6084af42e571e303c1,Roti Bank Karnataka,Rice and Dal,127 servings,HSR Layout Sector 2 Raichur,critical,pending,Street children feeding,2026-04-29T15:47:54.463Z
+f61f7ae662a803eea9f87c32,4bf3b3b05e5afde576fb66ad,Bangalore Baptist Hospital Kitchen,Protein-rich meals,222 servings,Race Course Road Mysore,medium,rejected,Daily distribution,2026-01-24T17:19:47.605Z
+edd22a2541790aab150914df,edbb5d00a928ee7a72276a3d,Seva Cafe Bangalore,Breakfast items,103 servings,Yelahanka New Town Hubli,low,approved,Emergency relief,2026-05-02T07:42:23.917Z
+bf2559bfb942acf7ce646bfe,c2d7bfd84f7dcfdefde59f01,Akshaya Patra Foundation,Bread and biscuits,208 servings,Lalbagh Road Bangalore,low,rejected,Daily distribution,2026-04-16T11:07:35.871Z
+677dcb8b50eb0bd8446e496b,c2d7bfd84f7dcfdefde59f01,Akshaya Patra Foundation,Cooked meals for 50,95 servings,Malleshwaram 8th Cross Bangalore,high,rejected,Street children feeding,2026-01-18T08:14:38.655Z
+d71e7abe85a29ae6fc55093f,c773c75663c588ad7ab910b9,Robin Hood Army Karnataka,Mixed food packages,66 servings,Hebbal Main Road Hubli,medium,fulfilled,Orphanage meals,2026-03-29T23:37:39.302Z
+ef42a6976ef8355f022180bb,0d36db5bd39fbe8e225b89f1,Food For All Trust,Protein-rich meals,161 servings,Electronic City Phase 1 Bangalore,critical,rejected,Orphanage meals,2026-01-09T12:31:55.996Z
+ef1033c054114058e607ed43,6824fda0d2144bf0d3240bd4,Adamya Chetana,Chapati and vegetables,131 servings,Bull Temple Road Belgaum,critical,pending,Daily distribution,2026-04-18T10:39:39.240Z
+35d64dfa8f3d74ba4881ce9a,7d27e8062de9ae0bcb14d7ab,No Food Waste Bangalore,Protein-rich meals,191 servings,Whitefield Main Road Gulbarga,medium,fulfilled,Street children feeding,2026-02-02T22:19:26.893Z
+d28d2ce5b19f8da7e57721ba,6824fda0d2144bf0d3240bd4,Adamya Chetana,Rice and Dal,209 servings,Jayanagar 4th Block Belgaum,critical,rejected,Daily distribution,2026-05-02T07:47:27.705Z
+500acfa283c8ff5ea2134248,c773c75663c588ad7ab910b9,Robin Hood Army Karnataka,Cooked meals for 50,150 servings,Vijayanagar Club Road Hubli,high,pending,Orphanage meals,2026-02-01T10:45:13.835Z
+4a41041dee950eb232dabc0e,6824fda0d2144bf0d3240bd4,Adamya Chetana,Fruits and milk,171 servings,Brigade Road Belgaum,medium,pending,Emergency relief,2026-02-21T05:28:33.487Z
+f2caee4569903b104d7f0b83,20c888892262b8d3eaac4864,Infosys Foundation,Mixed food packages,58 servings,Malleshwaram 8th Cross Shimoga,low,pending,Daily distribution,2026-02-15T06:28:33.211Z
+f9279d037c3b2ce0a75fe88f,c773c75663c588ad7ab910b9,Robin Hood Army Karnataka,Complete thali meals,173 servings,Race Course Road Hubli,critical,pending,School lunch program,2026-02-18T22:02:09.734Z
+6454aa9b4e8dfc353d7a1322,0d36db5bd39fbe8e225b89f1,Food For All Trust,Cooked meals for 50,70 servings,JP Nagar 6th Phase Bangalore,high,fulfilled,Emergency relief,2026-04-07T00:36:44.972Z
+722dfc50d2ea6c2b7ada6775,4bf3b3b05e5afde576fb66ad,Bangalore Baptist Hospital Kitchen,Complete thali meals,47 servings,Residency Road Mysore,high,fulfilled,Old age home,2026-03-08T20:17:10.691Z
+cd2766ff45adfaf3bb71a399,20c888892262b8d3eaac4864,Infosys Foundation,Chapati and vegetables,252 servings,Indiranagar 100ft Road Shimoga,high,fulfilled,Old age home,2026-01-14T21:10:48.504Z
+58ff8aa844e9f86af16df4da,c2d7bfd84f7dcfdefde59f01,Akshaya Patra Foundation,Mixed food packages,41 servings,Race Course Road Bangalore,high,rejected,Old age home,2026-02-04T17:55:00.905Z
+83d26506bef0f6b2866d8ff0,ea597221d2015802ab98757f,Namma Ooru Foundation,Chapati and vegetables,22 servings,Malleshwaram 8th Cross Mangalore,medium,pending,Orphanage meals,2026-01-10T07:20:07.188Z
+7ffdf3d9ccd5aff8b4704c80,6824fda0d2144bf0d3240bd4,Adamya Chetana,Cooked meals for 50,132 servings,Race Course Road Belgaum,low,pending,Community kitchen,2026-03-25T08:19:37.417Z
+a39afd8669d97ffedb4da351,6802704c9cfdca5055660608,Annapoorna Trust,Rice and Dal,207 servings,Hebbal Main Road Mangalore,low,approved,Orphanage meals,2026-03-06T21:21:49.169Z
+bb9b9222404d2827e36a37c4,c2d7bfd84f7dcfdefde59f01,Akshaya Patra Foundation,Complete thali meals,116 servings,Kengeri Main Road Bangalore,low,approved,Community kitchen,2026-01-18T10:18:18.613Z
+2548d355ace21994b528823e,0d36db5bd39fbe8e225b89f1,Food For All Trust,Breakfast items,110 servings,Commercial Street Bangalore,low,pending,School lunch program,2026-04-25T18:19:15.957Z
+090b4be6be0016f535c74070,20c888892262b8d3eaac4864,Infosys Foundation,Rice and Dal,289 servings,Kengeri Main Road Shimoga,high,fulfilled,Street children feeding,2026-04-07T14:56:58.921Z
+9a8963dc4aac28783efb5fd0,20c888892262b8d3eaac4864,Infosys Foundation,Baby food and milk,181 servings,Whitefield Main Road Shimoga,critical,pending,,2026-01-08T21:58:53.640Z
+40864ea0d0afb1730190c6b6,a6ca14f81606d5bd15bb6901,Iskcon Food Relief,Complete thali meals,137 servings,Yelahanka New Town Davanagere,low,pending,Community kitchen,2026-03-10T06:27:45.542Z
+728fe512fbb31842608e36b1,c773c75663c588ad7ab910b9,Robin Hood Army Karnataka,Mixed food packages,57 servings,Basaveshwaranagar Main Road Hubli,high,fulfilled,School lunch program,2026-02-24T09:22:53.113Z
+87a3cdf620c78794985fcd29,398b9f6084af42e571e303c1,Roti Bank Karnataka,Fruits and milk,40 servings,Commercial Street Raichur,high,pending,Orphanage meals,2026-04-02T01:18:11.570Z
+d408c7f31a489794b0ea1c87,bc06576f75cccafbef4fc17f,Feeding India,Protein-rich meals,212 servings,Jayanagar 4th Block Mysore,critical,approved,Community kitchen,2026-03-01T00:34:04.818Z
+888d736ddca58116a80d95ff,c2d7bfd84f7dcfdefde59f01,Akshaya Patra Foundation,Cooked meals for 50,70 servings,Bannerghatta Road Bangalore,medium,fulfilled,Daily distribution,2026-02-07T14:34:04.706Z
+409238d85e96bed9e3b1114d,24dca00547f82843a086a63c,HelpAge India Karnataka,Protein-rich meals,232 servings,Indiranagar 100ft Road Belgaum,high,pending,,2026-04-14T08:53:49.390Z
+ca035e529b276f7138279548,7d27e8062de9ae0bcb14d7ab,No Food Waste Bangalore,Fruits and milk,159 servings,Yelahanka New Town Gulbarga,critical,approved,Community kitchen,2026-04-12T04:52:24.109Z
+1dfbc928d577831f2dd01f79,20c888892262b8d3eaac4864,Infosys Foundation,Baby food and milk,85 servings,Yeshwanthpur Circle Shimoga,medium,rejected,Orphanage meals,2026-04-16T20:28:00.030Z
+023f029ff2f4b72b0e3bdeaa,c773c75663c588ad7ab910b9,Robin Hood Army Karnataka,Baby food and milk,278 servings,MG Road Hubli,high,pending,Emergency relief,2026-02-06T07:12:11.187Z
+ef65a0e3f2a79cfb12c8e612,6824fda0d2144bf0d3240bd4,Adamya Chetana,Rice and Dal,261 servings,Whitefield Main Road Belgaum,medium,rejected,Community kitchen,2026-01-26T12:47:33.837Z
+fc51df2e458b15b876c5b39c,398b9f6084af42e571e303c1,Roti Bank Karnataka,Chapati and vegetables,146 servings,Indiranagar 100ft Road Raichur,medium,fulfilled,Orphanage meals,2026-02-02T00:16:20.033Z

@@ -1,0 +1,56 @@
+_id,ngoId,organization_name,contact_person,phone,city,lat,lng,address,capacity,mealsServedDaily,openTime,closeTime,active,createdAt
+85bc35e22f7b58c1ac324fa0,c2d7bfd84f7dcfdefde59f01,Akshaya Patra Foundation,Ananya Gowda,+91 8023314340,Bangalore,12.9660,77.5825,Indiranagar 100ft Road Bangalore,891,496,08:00,20:00,true,2025-12-14T02:02:20.964Z
+5eb2275f235e0b9715b5f46b,bc06576f75cccafbef4fc17f,Feeding India,Pushpa Iyer,+91 8829562421,Mysore,12.2788,76.6207,Jayanagar 4th Block Mysore,1108,445,08:00,20:00,true,2026-02-19T18:27:28.094Z
+5c78b8f50ddfea1c708c7397,c773c75663c588ad7ab910b9,Robin Hood Army Karnataka,Kavita Patel,+91 7257097543,Hubli,15.3829,75.1132,Basaveshwaranagar Main Road Hubli,1162,65,08:00,20:00,true,2025-11-22T13:49:08.850Z
+b4698e11cccf412bb9c83072,6802704c9cfdca5055660608,Annapoorna Trust,Satish Gowda,+91 9817016918,Mangalore,12.9134,74.8744,Race Course Road Mangalore,955,232,08:00,20:00,true,2026-02-13T19:12:21.893Z
+066359bc70d83924086ff49a,6824fda0d2144bf0d3240bd4,Adamya Chetana,Geeta Menon,+91 9676660041,Belgaum,15.8688,74.4817,Brigade Road Belgaum,1126,173,08:00,20:00,true,2026-03-22T21:13:57.737Z
+6594b56af46860a01bf956c5,a6ca14f81606d5bd15bb6901,Iskcon Food Relief,Meenakshi Mallya,+91 8937546097,Davanagere,14.4486,75.9084,JP Nagar 6th Phase Davanagere,1363,127,08:00,20:00,true,2026-04-14T21:25:35.169Z
+167f926b18170329db51826b,20c888892262b8d3eaac4864,Infosys Foundation,Usha Naidu,+91 9584739305,Shimoga,13.9311,75.5603,Residency Road Shimoga,186,47,08:00,20:00,true,2026-01-10T11:32:25.119Z
+7f85bfb392c98706b8ce4469,959ca5c0337bf46dc1fe18d2,Wipro Cares,Pooja Shetty,+91 8525849205,Udupi,13.3278,74.7783,Brigade Road Udupi,890,204,08:00,20:00,true,2026-01-12T18:54:01.021Z
+dc6b15f25c6e537cf916a681,7d27e8062de9ae0bcb14d7ab,No Food Waste Bangalore,Sneha Pai,+91 8591904061,Gulbarga,17.3406,76.8347,Sarjapur Road Gulbarga,1008,295,08:00,20:00,true,2025-11-21T10:46:12.031Z
+e0ef45a2bc80e1224725b61a,398b9f6084af42e571e303c1,Roti Bank Karnataka,Ananya Gupta,+91 7881915308,Raichur,16.2001,77.3279,Yelahanka New Town Raichur,438,399,08:00,20:00,true,2026-02-25T10:18:55.646Z
+c6c17d3155d97dec3e59aaa0,0d36db5bd39fbe8e225b89f1,Food For All Trust,Jyothi Menon,+91 9247767655,Bangalore,12.9909,77.5920,Basaveshwaranagar Main Road Bangalore,954,164,08:00,20:00,true,2026-01-17T03:21:11.787Z
+172ba2eb3223f140027d1c61,4bf3b3b05e5afde576fb66ad,Bangalore Baptist Hospital Kitchen,Shobha Gowda,+91 8711403940,Mysore,12.2879,76.6271,Lalbagh Road Mysore,524,424,08:00,20:00,true,2025-11-18T08:32:37.627Z
+aa21a02dad1c4fbbd39bb123,edbb5d00a928ee7a72276a3d,Seva Cafe Bangalore,Ganesh Pai,+91 7828588303,Hubli,15.3763,75.1342,Brigade Road Hubli,721,36,08:00,20:00,true,2025-12-11T05:23:00.883Z
+5c13a1b6810c88ae5f6ed09f,ea597221d2015802ab98757f,Namma Ooru Foundation,Shilpa Swamy,+91 7733667873,Mangalore,12.9076,74.8718,Hebbal Main Road Mangalore,673,299,08:00,20:00,true,2026-03-04T22:05:29.052Z
+03f51363a1fac177bfedcf8f,24dca00547f82843a086a63c,HelpAge India Karnataka,Ganesh Pai,+91 7852071595,Belgaum,15.8365,74.5115,Hebbal Main Road Belgaum,1404,256,08:00,20:00,true,2025-11-27T09:45:59.128Z
+c810d22e09ce60fa36e710ab,c2d7bfd84f7dcfdefde59f01,CRY Karnataka,Sunita Acharya,+91 8610004429,Davanagere,14.4486,75.9233,Basaveshwaranagar Main Road Davanagere,1462,71,08:00,20:00,true,2025-11-22T18:54:34.534Z
+fcff0e354d04f11154370f54,bc06576f75cccafbef4fc17f,Smile Foundation Bangalore,Swathi Joshi,+91 8685674496,Shimoga,13.9306,75.5485,Basaveshwaranagar Main Road Shimoga,1007,383,08:00,20:00,true,2026-01-30T01:45:48.724Z
+7fce9496e6f21626f042cff4,c773c75663c588ad7ab910b9,GiveIndia Karnataka,Naveen Prasad,+91 8775815186,Udupi,13.3370,74.7874,Indiranagar 100ft Road Udupi,626,358,08:00,20:00,true,2026-03-11T04:59:00.206Z
+9c9fd9e7cf36f9749124f54d,6802704c9cfdca5055660608,United Way Bangalore,Venkat Gupta,+91 7749194679,Gulbarga,17.3291,76.8415,Brigade Road Gulbarga,1490,125,08:00,20:00,true,2025-12-05T10:01:22.514Z
+8f5d7aa206dc9e485224d152,6824fda0d2144bf0d3240bd4,Concern India Foundation,Deepa Swamy,+91 9016469389,Raichur,16.2160,77.3253,Jayanagar 4th Block Raichur,1149,101,08:00,20:00,true,2026-02-06T07:04:48.683Z
+b6476be316a6d572341f7c7a,a6ca14f81606d5bd15bb6901,Life Center Bangalore,Satish Verma,+91 9514176113,Bangalore,12.9684,77.5799,Yeshwanthpur Circle Bangalore,531,416,08:00,20:00,true,2025-12-01T21:39:07.689Z
+e1c62290399e3d662312edea,20c888892262b8d3eaac4864,Hope Center Mysore,Kishore Sharma,+91 8320059121,Mysore,12.2802,76.6448,Yelahanka New Town Mysore,806,385,08:00,20:00,true,2025-12-31T10:00:33.761Z
+4b08936eb580e0ef6204ddec,959ca5c0337bf46dc1fe18d2,Hope Foundation Hubli,Ganesh Patil,+91 7834969255,Hubli,15.3763,75.1290,Malleshwaram 8th Cross Hubli,990,237,08:00,20:00,true,2026-03-05T10:55:00.370Z
+7dd38c7c0eeb912822034c5c,7d27e8062de9ae0bcb14d7ab,Life Hub Mangalore,Harish Kudva,+91 7041655965,Mangalore,12.9301,74.8615,Yeshwanthpur Circle Mangalore,161,126,08:00,20:00,true,2026-02-26T19:05:38.139Z
+797306f0288adf5508230aaa,398b9f6084af42e571e303c1,Nourish Center Belgaum,Padma Iyer,+91 7594679598,Belgaum,15.8537,74.4865,Kengeri Main Road Belgaum,1257,424,08:00,20:00,true,2025-10-26T21:07:27.794Z
+84b6126e1ce56568864bb577,0d36db5bd39fbe8e225b89f1,Hope Center Davanagere,Ganesh Nair,+91 8756706279,Davanagere,14.4549,75.9368,HSR Layout Sector 2 Davanagere,848,395,08:00,20:00,true,2026-02-08T10:50:15.841Z
+3f3b8ebc7c1b7e684c98e6ea,4bf3b3b05e5afde576fb66ad,Nourish Hub Shimoga,Vasudha Kulkarni,+91 9176149554,Shimoga,13.9267,75.5846,Whitefield Main Road Shimoga,416,271,08:00,20:00,true,2026-01-08T04:12:28.440Z
+2156303c2570691dd774c542,edbb5d00a928ee7a72276a3d,Care Foundation Udupi,Padma Kamath,+91 9740892149,Udupi,13.3477,74.7839,Bannerghatta Road Udupi,238,415,08:00,20:00,true,2025-11-02T15:54:20.507Z
+d27b0a774b6e658e68fdab98,ea597221d2015802ab98757f,Care Center Gulbarga,Swathi Menon,+91 9931514986,Gulbarga,17.3456,76.8370,Indiranagar 100ft Road Gulbarga,641,441,08:00,20:00,true,2026-01-25T02:19:50.114Z
+dcb46190c710cd30c75380f5,24dca00547f82843a086a63c,Community Foundation Raichur,Rekha Hegde,+91 7841562433,Raichur,16.2280,77.3377,Malleshwaram 8th Cross Raichur,1124,76,08:00,20:00,true,2026-05-06T10:05:43.104Z
+367315dd9aa85bc64700907b,c2d7bfd84f7dcfdefde59f01,Life Center Bangalore,Ganesh Ballal,+91 9980645347,Bangalore,12.9790,77.6019,Hebbal Main Road Bangalore,1110,44,08:00,20:00,true,2025-10-08T05:29:09.026Z
+a7af6f8931da1bcbfad6bc62,bc06576f75cccafbef4fc17f,Hope Hub Mysore,Nagaraj Patil,+91 8361698430,Mysore,12.3004,76.6589,Bull Temple Road Mysore,211,255,08:00,20:00,true,2026-02-07T22:38:00.329Z
+104943f702775a77f5bac3c5,c773c75663c588ad7ab910b9,Community Foundation Hubli,Praveen Menon,+91 9325447177,Hubli,15.3531,75.1059,JP Nagar 6th Phase Hubli,942,262,08:00,20:00,true,2025-12-19T19:16:49.195Z
+638627d1c9e8cbdbf6f19481,6802704c9cfdca5055660608,Life Hub Mangalore,Harish Pai,+91 8914538278,Mangalore,12.8942,74.8411,Race Course Road Mangalore,1188,490,08:00,20:00,true,2026-01-15T13:59:58.098Z
+bd3b569ecfe702c3e782bc57,6824fda0d2144bf0d3240bd4,Hope Kitchen Belgaum,Kishore Naidu,+91 8353342668,Belgaum,15.8623,74.5112,Basaveshwaranagar Main Road Belgaum,237,288,08:00,20:00,true,2026-04-05T14:54:35.508Z
+ae1fc4dd94ab2418b6aebe28,a6ca14f81606d5bd15bb6901,Life Kitchen Davanagere,Nagaraj Sharma,+91 8437186451,Davanagere,14.4624,75.9093,Brigade Road Davanagere,323,400,08:00,20:00,true,2026-01-25T00:43:24.330Z
+35acebf4c99c9950d7f36d8e,20c888892262b8d3eaac4864,Care Kitchen Shimoga,Prasad Kumar,+91 9641895390,Shimoga,13.9388,75.5778,Koramangala 5th Block Shimoga,840,130,08:00,20:00,true,2026-01-01T22:55:51.217Z
+8391a10f38665079b4288ef1,959ca5c0337bf46dc1fe18d2,Care Center Udupi,Lakshmi Shetty,+91 7604730221,Udupi,13.3564,74.7944,Race Course Road Udupi,1299,308,08:00,20:00,true,2026-03-22T16:23:22.444Z
+b41fdde62e0002fc32fd3f95,7d27e8062de9ae0bcb14d7ab,Nourish Foundation Gulbarga,Murali Kulkarni,+91 7374902202,Gulbarga,17.3450,76.8427,Hebbal Main Road Gulbarga,1239,488,08:00,20:00,true,2026-05-09T11:45:02.226Z
+3fb3f50a1d193465f84fd32c,398b9f6084af42e571e303c1,Life Hub Raichur,Sunita Bhat,+91 7585483245,Raichur,16.2200,77.3482,Bull Temple Road Raichur,994,236,08:00,20:00,true,2026-01-08T20:34:23.750Z
+9cc6a897ed1c8773592e26a6,0d36db5bd39fbe8e225b89f1,Life Hub Bangalore,Mohan Prasad,+91 8955011263,Bangalore,12.9529,77.6142,JP Nagar 6th Phase Bangalore,699,303,08:00,20:00,true,2026-02-03T05:33:36.310Z
+a237bda0aa00068933c0a8df,4bf3b3b05e5afde576fb66ad,Hope Kitchen Mysore,Naveen Reddy,+91 7176652138,Mysore,12.3066,76.6530,Whitefield Main Road Mysore,1405,160,08:00,20:00,true,2025-11-11T18:05:27.491Z
+b96f2aa384ed6759b3d8b18c,edbb5d00a928ee7a72276a3d,Hope Kitchen Hubli,Rohit Swamy,+91 8405067207,Hubli,15.3623,75.1272,Rajajinagar 1st Block Hubli,934,359,08:00,20:00,true,2026-02-11T19:47:58.084Z
+9492684e92fa113351f1d958,ea597221d2015802ab98757f,Nourish Kitchen Mangalore,Ganesh Pai,+91 7565365200,Mangalore,12.9276,74.8417,MG Road Mangalore,578,415,08:00,20:00,true,2025-11-11T07:26:47.313Z
+51ee294d399f64eba6a2afb7,24dca00547f82843a086a63c,Life Center Belgaum,Sunita Nair,+91 7569705393,Belgaum,15.8525,74.5089,Peenya Industrial Area Belgaum,593,31,08:00,20:00,true,2026-01-08T13:07:35.519Z
+709525f2864211812fd064f7,c2d7bfd84f7dcfdefde59f01,Community Hub Davanagere,Sneha Ballal,+91 8658593794,Davanagere,14.4800,75.9228,Kengeri Main Road Davanagere,457,494,08:00,20:00,true,2026-01-25T15:16:10.872Z
+40a87f4a1105badc12786df9,bc06576f75cccafbef4fc17f,Care Center Shimoga,Abdul Gupta,+91 8798729485,Shimoga,13.9330,75.5771,Electronic City Phase 1 Shimoga,1271,79,08:00,20:00,true,2026-03-25T21:12:09.093Z
+f9b817423628180bfab0d6f6,c773c75663c588ad7ab910b9,Care Foundation Udupi,Padma Amin,+91 8941447957,Udupi,13.3270,74.8166,Malleshwaram 8th Cross Udupi,558,319,08:00,20:00,true,2026-02-21T00:38:38.558Z
+c81c15725b0a3fee755cd33b,6802704c9cfdca5055660608,Community Kitchen Gulbarga,Lakshmi Patil,+91 9810243569,Gulbarga,17.3307,76.8299,Sarjapur Road Gulbarga,180,499,08:00,20:00,true,2025-11-11T01:11:17.675Z
+0df241f87d7c4b4a07cc7c1c,6824fda0d2144bf0d3240bd4,Hope Center Raichur,Mangala Ballal,+91 9063583859,Raichur,16.2275,77.3528,JP Nagar 6th Phase Raichur,188,53,08:00,20:00,true,2026-02-12T10:33:17.618Z
+0b1ace48a83538d10c225ddb,a6ca14f81606d5bd15bb6901,Care Hub Bangalore,Ravi Ballal,+91 7130668736,Bangalore,12.9897,77.6108,Brigade Road Bangalore,603,226,08:00,20:00,true,2026-01-12T23:34:16.882Z
+d032315565a43620e7674bc6,20c888892262b8d3eaac4864,Life Foundation Mysore,Karthik Kulkarni,+91 7674083564,Mysore,12.3076,76.6319,Race Course Road Mysore,172,88,08:00,20:00,true,2026-02-19T13:38:06.608Z
+82a3800104cefbdd0c798c75,959ca5c0337bf46dc1fe18d2,Community Foundation Hubli,Kavita Gupta,+91 7205149995,Hubli,15.3739,75.1398,Jayanagar 4th Block Hubli,682,169,08:00,20:00,true,2025-11-21T21:22:58.676Z
+5cba55e8ca65b855926be40b,7d27e8062de9ae0bcb14d7ab,Nourish Hub Mangalore,Anjali Hegde,+91 9639971266,Mangalore,12.9100,74.8743,Kengeri Main Road Mangalore,947,287,08:00,20:00,true,2026-01-28T04:23:14.386Z
+258d3f9de90c165cccb0e76d,398b9f6084af42e571e303c1,Community Center Belgaum,Mahesh Gowda,+91 9415684137,Belgaum,15.8527,74.4965,Whitefield Main Road Belgaum,722,255,08:00,20:00,true,2025-11-28T03:52:54.119Z

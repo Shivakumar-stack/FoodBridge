@@ -1,0 +1,71 @@
+_id,user,title,message,type,isRead,createdAt
+57bb8272dbd89791fd137fb8,daa97ec3227390a8cdf91f87,System Update,Your dashboard has been updated with latest metrics.,info,false,2026-03-03T01:53:19.275Z
+2beacb231746b1a45b8545a3,6824fda0d2144bf0d3240bd4,Error Occurred,Failed to process your last request. Please retry.,error,true,2026-03-24T21:25:44.326Z
+c7e83983fab31fd9bde5fb47,a6ca14f81606d5bd15bb6901,New Donation,A new donation matching your area is available.,donation,true,2026-03-20T05:30:06.249Z
+886946191795929a137da53a,8e8edcb7bb4f7522587cd2e1,Attention Required,A donation near you is expiring soon - please check.,warning,true,2026-03-18T13:51:26.993Z
+24c6699dfd6d71a3efb7c30c,a16b86b8cddd488059b1661c,Delivery Update,Your donation has been delivered successfully.,delivery,false,2026-02-07T21:14:29.621Z
+15fe024e722c9b38e40dbfd9,75953b5bd3862a4fcb048d40,System Update,Your dashboard has been updated with latest metrics.,info,true,2026-02-28T23:36:30.231Z
+1b6472c9bf5a372946c58127,04e7bb4a059b6d89918736d6,Error Occurred,Failed to process your last request. Please retry.,error,false,2026-04-04T00:42:47.184Z
+1cb3a3dd519c25737236110f,c2d7bfd84f7dcfdefde59f01,System Update,Your dashboard has been updated with latest metrics.,info,false,2026-02-28T16:30:10.155Z
+413bda6da78444c6c71cee15,cba19fd1f22bc5c1489edff6,Pickup Scheduled,A volunteer has been assigned for pickup.,pickup,true,2026-03-19T11:07:39.256Z
+cc4c2d2f2ee48f1cab52d60c,78dcc604dcd338ad16d3fe4d,System Update,Your dashboard has been updated with latest metrics.,info,true,2026-04-17T10:16:20.788Z
+c67929a3c83d63bd9f107bb8,a28b2fee2d8a1d7f5413c88d,Delivery Update,Your donation has been delivered successfully.,delivery,true,2026-03-01T08:25:23.435Z
+a008a622f10f97f4ad0a4845,adc61879d888fdcddfd1c29e,Action Completed,Your donation has been successfully processed.,success,true,2026-02-11T13:46:10.623Z
+2a17de89f21bf7c31b525081,827d689efe2a618b3cd9a9d6,Pickup Scheduled,A volunteer has been assigned for pickup.,pickup,false,2026-03-23T03:09:49.696Z
+72c2313323b21ed173fd9f02,501cba39e4acdecc5ea6326e,Urgent Alert,Critical: Multiple donations expiring within 2 hours.,alert,true,2026-03-15T12:31:08.263Z
+ee8f339cca8322c4d1c74c97,6fc8a94356af32897a611d62,Delivery Update,Your donation has been delivered successfully.,delivery,true,2026-01-24T12:08:59.282Z
+ee36e970a2d8a94cb26788ff,501cba39e4acdecc5ea6326e,Attention Required,A donation near you is expiring soon - please check.,warning,true,2026-03-01T13:29:02.861Z
+70e1d2113b35db3a7c331835,04153986e3940efd1dd085af,Delivery Update,Your donation has been delivered successfully.,delivery,true,2026-02-05T14:49:30.519Z
+350b72e849763fb8da6479e2,a28b2fee2d8a1d7f5413c88d,New Assignment,You have been assigned a new pickup task.,assignment,true,2026-04-17T17:11:46.125Z
+4d0309edd65a7bb7d7d79f1a,398b9f6084af42e571e303c1,Pickup Scheduled,A volunteer has been assigned for pickup.,pickup,true,2026-04-30T05:15:00.787Z
+3e2a34258a24902e96337996,75953b5bd3862a4fcb048d40,System Update,Your dashboard has been updated with latest metrics.,info,false,2026-02-24T01:20:13.735Z
+4bcb4d9781ad9b8818bf6fd3,971fcc88a9e93eb6f9197b62,System Update,Your dashboard has been updated with latest metrics.,info,false,2026-02-09T13:12:30.991Z
+feed15f1b47f8c1823e92ecd,adc61879d888fdcddfd1c29e,Pickup Scheduled,A volunteer has been assigned for pickup.,pickup,true,2026-05-08T08:39:34.866Z
+c6cbfd764067fc96bc208b6f,e79efed725701e061c43823e,New Donation,A new donation matching your area is available.,donation,true,2026-04-19T04:14:22.433Z
+841c74016d97347d458e0659,f40f10e098bf313a2e55890b,System Update,Your dashboard has been updated with latest metrics.,info,true,2026-04-11T21:31:18.943Z
+7069e383218b05b69537b510,c302ee97df6cd1e4168e3266,Action Completed,Your donation has been successfully processed.,success,true,2026-01-18T11:57:51.572Z
+2bed5bcb18a59ab53d64aa92,210e2119bbde22816907aafe,New Donation,A new donation matching your area is available.,donation,true,2026-03-11T19:01:23.412Z
+fc0f91c872bf4c42d6d338b2,7d27e8062de9ae0bcb14d7ab,Urgent Alert,Critical: Multiple donations expiring within 2 hours.,alert,true,2026-01-07T04:57:14.722Z
+d0bb67f7c608196b31040b00,35066f8689d11fd8c31f9d98,Attention Required,A donation near you is expiring soon - please check.,warning,true,2026-04-06T10:30:12.194Z
+16179311f2524c7a51f49386,35066f8689d11fd8c31f9d98,New Assignment,You have been assigned a new pickup task.,assignment,true,2026-04-14T22:15:37.385Z
+b641dbd9980c0427e4526a98,6dd6f81fe0369535baedf4b6,Error Occurred,Failed to process your last request. Please retry.,error,true,2026-04-02T01:45:35.783Z
+f4a3e5c57ad26aac7e2b4f06,d26845e77bab2f7e26e7b1a3,Attention Required,A donation near you is expiring soon - please check.,warning,true,2026-03-29T02:13:24.284Z
+1133f0087b428b2351305cc0,ea597221d2015802ab98757f,New Assignment,You have been assigned a new pickup task.,assignment,true,2026-04-27T03:27:45.547Z
+868cc84512eca6d2754604bf,5154aa39e76765fa519a8367,Donation Status Changed,Donation status changed to claimed.,status_update,true,2026-01-14T17:03:56.526Z
+03be80c2962ab8ba9f3d6968,e79efed725701e061c43823e,Delivery Update,Your donation has been delivered successfully.,delivery,true,2026-03-01T09:08:13.425Z
+8af089ff6b80afe687a38bb5,04e7bb4a059b6d89918736d6,Error Occurred,Failed to process your last request. Please retry.,error,true,2026-02-01T04:30:50.432Z
+e457d16d091e3a46f60ee410,39d85ae3b91cb2f4662da4fd,System Update,Your dashboard has been updated with latest metrics.,info,false,2026-02-25T07:23:36.685Z
+28331e8133105b10d5ef1fd2,959ca5c0337bf46dc1fe18d2,Delivery Update,Your donation has been delivered successfully.,delivery,false,2026-01-08T16:46:52.912Z
+e4c7d0413b8928c67a67de92,2f4fcb1a9936258e3a3cad5f,Urgent Alert,Critical: Multiple donations expiring within 2 hours.,alert,true,2026-04-14T21:09:02.274Z
+0fc3b8656ab8d75a945dcaa2,edbb5d00a928ee7a72276a3d,Action Completed,Your donation has been successfully processed.,success,true,2026-04-14T12:21:48.566Z
+80d42902aae762543ef395f0,6dd6f81fe0369535baedf4b6,New Donation,A new donation matching your area is available.,donation,false,2026-03-14T17:10:14.469Z
+347ceef78157dd38626f87c9,39d85ae3b91cb2f4662da4fd,Donation Status Changed,Donation status changed to closed.,status_update,false,2026-03-25T06:43:19.982Z
+4caf035035417c86699c16ba,bc06576f75cccafbef4fc17f,New Donation,A new donation matching your area is available.,donation,false,2026-02-04T01:12:44.390Z
+2e7221e4be9e934f4dd295b0,04153986e3940efd1dd085af,System Update,Your dashboard has been updated with latest metrics.,info,false,2026-01-15T23:55:01.205Z
+f06afa9ccb0e615003ad2d29,7d27e8062de9ae0bcb14d7ab,New Assignment,You have been assigned a new pickup task.,assignment,true,2026-03-23T17:08:35.232Z
+9158a931dede64ba363d18bd,6824fda0d2144bf0d3240bd4,Attention Required,A donation near you is expiring soon - please check.,warning,true,2026-05-03T16:10:17.858Z
+ee7bfc26b9fb84cc6e81e557,d94252af0a6a69796c98aae0,Action Completed,Your donation has been successfully processed.,success,false,2026-03-02T16:06:57.571Z
+24876b6d41b1b82fc0fdffd1,04e7bb4a059b6d89918736d6,Attention Required,A donation near you is expiring soon - please check.,warning,false,2026-03-30T14:56:55.334Z
+fe1bb6c3ca77d4fb0b3f59c9,bf1fe175a0ef9f56b715e988,Action Completed,Your donation has been successfully processed.,success,true,2026-02-20T12:55:05.118Z
+be9b8237d73bd05fb3ce4ee1,c773c75663c588ad7ab910b9,Error Occurred,Failed to process your last request. Please retry.,error,true,2026-03-23T10:38:58.033Z
+62fbcaf844751600096dfc24,35066f8689d11fd8c31f9d98,Attention Required,A donation near you is expiring soon - please check.,warning,true,2026-04-02T16:05:32.124Z
+fa78c398c9861f212cd7161a,f22439cd039f37f72017869c,Urgent Alert,Critical: Multiple donations expiring within 2 hours.,alert,true,2026-01-31T18:55:34.747Z
+24a618a8cc4c1f29e61e2986,210e2119bbde22816907aafe,Urgent Alert,Critical: Multiple donations expiring within 2 hours.,alert,false,2026-04-19T07:19:32.198Z
+ed68d6cd53791f5f5076ecc4,7d27e8062de9ae0bcb14d7ab,Pickup Scheduled,A volunteer has been assigned for pickup.,pickup,true,2026-01-14T10:14:37.219Z
+bd345c1b21cc125ba53661f2,f83839f2aa075ba75f8bbcae,Action Completed,Your donation has been successfully processed.,success,true,2026-04-08T23:08:26.268Z
+cfa2e4ddfabf78dd95227648,2f4fcb1a9936258e3a3cad5f,Urgent Alert,Critical: Multiple donations expiring within 2 hours.,alert,false,2026-04-26T06:57:40.612Z
+a8c1a4f9bea127cf6a8185de,6f11ced354c71808edde80c0,System Update,Your dashboard has been updated with latest metrics.,info,true,2026-02-18T11:14:57.916Z
+ac1f0c8445cf5a542305a79a,f83839f2aa075ba75f8bbcae,Attention Required,A donation near you is expiring soon - please check.,warning,false,2026-03-31T10:50:05.838Z
+cc5e6e77be411dd725f75796,42c44e7a405aa5347cbb400c,New Assignment,You have been assigned a new pickup task.,assignment,false,2026-02-27T19:32:06.580Z
+6e0ef4ce5166f8eea93a84e9,78dcc604dcd338ad16d3fe4d,Delivery Update,Your donation has been delivered successfully.,delivery,true,2026-03-07T15:31:38.842Z
+0862b705e9b6d6832300deda,7497e297dd56bf0fb95d3daf,Delivery Update,Your donation has been delivered successfully.,delivery,true,2026-03-27T11:23:06.409Z
+fc5b6a65dc217d19e217a961,99d72b95973177025cfd242b,Error Occurred,Failed to process your last request. Please retry.,error,true,2026-02-11T11:50:53.423Z
+01f10f0cf1d1207811879ed1,20c888892262b8d3eaac4864,Error Occurred,Failed to process your last request. Please retry.,error,false,2026-01-10T15:13:14.235Z
+86b36f0394aa471e73fbc506,7d27e8062de9ae0bcb14d7ab,Donation Status Changed,Donation status changed to cancelled.,status_update,true,2026-03-05T07:09:37.238Z
+b332d1e249a93a230aa2723f,ef2685b6ccea74f6152e5ea2,Action Completed,Your donation has been successfully processed.,success,true,2026-03-14T01:27:48.627Z
+470a5257c27101a5c80195f9,ef2685b6ccea74f6152e5ea2,New Donation,A new donation matching your area is available.,donation,false,2026-01-12T13:37:00.996Z
+7676d853766c2bb2f97146ea,210e2119bbde22816907aafe,Pickup Scheduled,A volunteer has been assigned for pickup.,pickup,true,2026-01-26T15:28:00.398Z
+f3756cdb69f734193dcc618e,827d689efe2a618b3cd9a9d6,Error Occurred,Failed to process your last request. Please retry.,error,true,2026-03-31T22:21:02.482Z
+6518f1236cdb9ce5ab9289d4,fc6633a41b26441112e84894,System Update,Your dashboard has been updated with latest metrics.,info,true,2026-05-04T07:23:25.496Z
+c7b01e27cc040d6e3dab0ba3,f22439cd039f37f72017869c,Urgent Alert,Critical: Multiple donations expiring within 2 hours.,alert,false,2026-04-01T22:06:55.398Z
+bba124c33662cddce64789e6,c773c75663c588ad7ab910b9,New Donation,A new donation matching your area is available.,donation,false,2026-04-04T16:22:23.196Z

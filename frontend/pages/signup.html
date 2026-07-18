@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up — FoodBridge</title>
+    <meta
+      name="description"
+      content="Create your FoodBridge account to start donating food, volunteering, or managing your NGO."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Design System -->
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/auth-fix.css" />
+  </head>
+
+  <body class="auth-page no-footer">
+    <!-- Navigation -->
+    <nav class="auth-navbar" aria-label="Site navigation">
+      <div class="auth-navbar__inner">
+        <a href="../pages/index.html" class="auth-navbar__brand">
+          <div class="auth-navbar__logo" aria-hidden="true">
+            <img src="../assets/images/logo.png" alt="FoodBridge Logo">
+          </div>
+          <span class="auth-navbar__title">FoodBridge</span>
+        </a>
+        <a href="../pages/index.html" class="auth-navbar__back">
+          <i class="fas fa-arrow-left"></i>
+          <span>Back to Home</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="auth-container">
+      <div class="auth-card" style="max-width: 520px">
+        <!-- Header -->
+        <div class="auth-card__header">
+          <div class="auth-card__icon" aria-hidden="true">
+            <i class="fas fa-user-plus"></i>
+          </div>
+          <h1 class="auth-card__title">Create Your Account</h1>
+          <p class="auth-card__subtitle">
+            Join our community to fight food waste and hunger
+          </p>
+        </div>
+
+        <!-- Step Progress -->
+        <div
+          class="auth-steps"
+          role="progressbar"
+          aria-valuemin="1"
+          aria-valuemax="3"
+          aria-valuenow="1"
+          aria-label="Signup progress"
+        >
+          <div
+            class="auth-step-indicator auth-step-indicator--active"
+            data-step="1"
+          >
+            1
+          </div>
+          <div class="auth-step-line" data-line="1"></div>
+          <div class="auth-step-indicator" data-step="2">2</div>
+          <div class="auth-step-line" data-line="2"></div>
+          <div class="auth-step-indicator" data-step="3">3</div>
+        </div>
+
+        <!-- Alert Container -->
+        <div id="auth-alert" role="alert" aria-live="polite"></div>
+
+        <!-- Signup Form -->
+        <form id="signupForm" novalidate>
+          <!-- ─── Step 1: Personal Info ─── -->
+          <div class="auth-form-step auth-form-step--active" data-step="1">
+            <h2 class="auth-step-title">Personal Information</h2>
+
+            <!-- Name Row -->
+            <div class="auth-form-group--row">
+              <div class="auth-form-group">
+                <label for="signup-firstName" class="auth-label"
+                  >First Name</label
+                >
+                <div class="auth-input-wrapper">
+                  <i
+                    class="fas fa-user auth-input-wrapper__icon"
+                    aria-hidden="true"
+                  ></i>
+                  <input
+                    type="text"
+                    id="signup-firstName"
+                    name="firstName"
+                    class="auth-input"
+                    placeholder="John"
+                    required
+                    autocomplete="given-name"
+                    aria-describedby="signup-firstName-error"
+                  />
+                </div>
+                <div id="signup-firstName-error"></div>
+              </div>
+              <div class="auth-form-group">
+                <label for="signup-lastName" class="auth-label"
+                  >Last Name</label
+                >
+                <div class="auth-input-wrapper">
+                  <i
+                    class="fas fa-user auth-input-wrapper__icon"
+                    aria-hidden="true"
+                  ></i>
+                  <input
+                    type="text"
+                    id="signup-lastName"
+                    name="lastName"
+                    class="auth-input"
+                    placeholder="Doe"
+                    required
+                    autocomplete="family-name"
+                    aria-describedby="signup-lastName-error"
+                  />
+                </div>
+                <div id="signup-lastName-error"></div>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="auth-form-group">
+              <label for="signup-email" class="auth-label">Email Address</label>
+              <div class="auth-input-wrapper">
+                <i
+                  class="fas fa-envelope auth-input-wrapper__icon"
+                  aria-hidden="true"
+                ></i>
+                <input
+                  type="email"
+                  id="signup-email"
+                  name="email"
+                  class="auth-input"
+                  placeholder="you@example.com"
+                  required
+                  autocomplete="email"
+                  aria-describedby="signup-email-error"
+                />
+              </div>
+              <div id="signup-email-error"></div>
+            </div>
+
+            <!-- Phone -->
+            <div class="auth-form-group">
+              <label for="signup-phone" class="auth-label">Phone Number</label>
+              <div class="auth-input-wrapper">
+                <i
+                  class="fas fa-phone auth-input-wrapper__icon"
+                  aria-hidden="true"
+                ></i>
+                <input
+                  type="tel"
+                  id="signup-phone"
+                  name="phone"
+                  class="auth-input"
+                  placeholder="10-digit phone number"
+                  maxlength="10"
+                  minlength="10"
+                  pattern="\d{10}"
+                  autocomplete="tel"
+                  aria-describedby="signup-phone-error"
+                />
+              </div>
+              <div id="signup-phone-error"></div>
+              <p
+                class="auth-field-error"
+                style="
+                  color: var(--fb-text-muted);
+                  animation: none;
+                  margin-top: 6px;
+                "
+              >
+                We'll only use this for donation coordination
+              </p>
+            </div>
+
+            <button
+              type="button"
+              class="auth-btn auth-btn--primary"
+              data-action="next-step"
+            >
+              <span>Continue</span>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <!-- ─── Step 2: Select Role ─── -->
+          <div class="auth-form-step" data-step="2">
+            <h2 class="auth-step-title">Select Your Role</h2>
+            <p class="auth-step-subtitle">Choose how you want to participate</p>
+
+            <div class="auth-role-cards">
+              <!-- Donor -->
+              <label class="auth-role-card auth-role-card--selected">
+                <input type="radio" name="role" value="donor" checked />
+                <div class="auth-role-card__icon" aria-hidden="true">
+                  <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <div class="auth-role-card__info">
+                  <p class="auth-role-card__title">Food Donor</p>
+                  <p class="auth-role-card__desc">
+                    Restaurants, hotels, caterers, individuals
+                  </p>
+                </div>
+                <i
+                  class="fas fa-check-circle auth-role-card__check"
+                  aria-hidden="true"
+                ></i>
+              </label>
+
+              <!-- Volunteer -->
+              <label class="auth-role-card">
+                <input type="radio" name="role" value="volunteer" />
+                <div class="auth-role-card__icon" aria-hidden="true">
+                  <i class="fas fa-hands-helping"></i>
+                </div>
+                <div class="auth-role-card__info">
+                  <p class="auth-role-card__title">Volunteer</p>
+                  <p class="auth-role-card__desc">
+                    Pickup and deliver food to those in need
+                  </p>
+                </div>
+                <i
+                  class="fas fa-check-circle auth-role-card__check"
+                  aria-hidden="true"
+                ></i>
+              </label>
+
+              <!-- NGO -->
+              <label class="auth-role-card">
+                <input type="radio" name="role" value="ngo" />
+                <div class="auth-role-card__icon" aria-hidden="true">
+                  <i class="fas fa-building"></i>
+                </div>
+                <div class="auth-role-card__info">
+                  <p class="auth-role-card__title">NGO / Organization</p>
+                  <p class="auth-role-card__desc">
+                    Non-profits, shelters, food banks
+                  </p>
+                </div>
+                <i
+                  class="fas fa-check-circle auth-role-card__check"
+                  aria-hidden="true"
+                ></i>
+              </label>
+            </div>
+
+            <div class="auth-btn-row">
+              <button
+                type="button"
+                class="auth-btn auth-btn--secondary"
+                data-action="prev-step"
+              >
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                <span>Back</span>
+              </button>
+              <button
+                type="button"
+                class="auth-btn auth-btn--primary"
+                data-action="next-step"
+              >
+                <span>Continue</span>
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- ─── Step 3: Create Password ─── -->
+          <div class="auth-form-step" data-step="3">
+            <h2 class="auth-step-title">Create Password</h2>
+
+            <!-- Password -->
+            <div class="auth-form-group">
+              <label for="signup-password" class="auth-label">Password</label>
+              <div class="auth-input-wrapper">
+                <i
+                  class="fas fa-lock auth-input-wrapper__icon"
+                  aria-hidden="true"
+                ></i>
+                <input
+                  type="password"
+                  id="signup-password"
+                  name="password"
+                  class="auth-input"
+                  placeholder="Min 6 characters"
+                  required
+                  minlength="6"
+                  autocomplete="new-password"
+                  aria-describedby="signup-password-error"
+                />
+                <button
+                  type="button"
+                  id="togglePassword"
+                  class="auth-password-toggle"
+                  aria-label="Toggle password visibility"
+                  aria-pressed="false"
+                  aria-controls="signup-password"
+                >
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+              <div id="signup-password-error"></div>
+              <!-- Strength Meter -->
+              <div class="auth-strength-meter" id="passwordStrengthMeter">
+                <div class="auth-strength-bar"></div>
+                <div class="auth-strength-bar"></div>
+                <div class="auth-strength-bar"></div>
+                <div class="auth-strength-bar"></div>
+              </div>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="auth-form-group">
+              <label for="signup-confirmPassword" class="auth-label"
+                >Confirm Password</label
+              >
+              <div class="auth-input-wrapper">
+                <i
+                  class="fas fa-lock auth-input-wrapper__icon"
+                  aria-hidden="true"
+                ></i>
+                <input
+                  type="password"
+                  id="signup-confirmPassword"
+                  name="confirmPassword"
+                  class="auth-input"
+                  placeholder="Re-enter your password"
+                  required
+                  autocomplete="new-password"
+                  aria-describedby="signup-confirmPassword-error"
+                />
+                <button
+                  type="button"
+                  id="toggleConfirmPassword"
+                  class="auth-password-toggle"
+                  aria-label="Toggle confirm password visibility"
+                  aria-pressed="false"
+                  aria-controls="signup-confirmPassword"
+                >
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+              <div id="signup-confirmPassword-error"></div>
+            </div>
+
+            <!-- Terms -->
+            <label class="auth-terms">
+              <input type="checkbox" name="terms" required aria-describedby="signup-terms-error" />
+              <span class="auth-terms__text">
+                I agree to the
+                <a href="../pages/terms.html">Terms of Service</a>
+                and
+                <a href="../pages/privacy-policy.html">Privacy Policy</a>
+              </span>
+            </label>
+            <div id="signup-terms-error"></div>
+
+            <div class="auth-btn-row">
+              <button
+                type="button"
+                class="auth-btn auth-btn--secondary"
+                data-action="prev-step"
+              >
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                <span>Back</span>
+              </button>
+              <button
+                type="submit"
+                id="signupSubmitBtn"
+                class="auth-btn auth-btn--primary"
+              >
+                <i class="fas fa-user-plus" aria-hidden="true"></i>
+                <span>Create Account</span>
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Removed social signup for a more professional look -->
+
+        <!-- Switch Link -->
+        <p class="auth-switch">
+          Already have an account?
+          <a href="../pages/login.html" class="auth-switch__link">Log in</a>
+        </p>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="../utils/config.js"></script>
+    <script src="../utils/toast.js"></script>
+    <script src="../utils/app.js"></script>
+    <script src="../auth/validation.js"></script>
+    
+    <script src="../auth/signup.js"></script>
+  </body>
+</html>
+
+

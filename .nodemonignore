@@ -1,0 +1,6 @@
+logs/*
+scratch/*
+frontend/*
+backend/uploads/*
+backend/data/*
+*.log
