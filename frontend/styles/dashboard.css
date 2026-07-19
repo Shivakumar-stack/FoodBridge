@@ -1895,3 +1895,13 @@ strong.map-priority-low { color: #10b981 !important; }
   gap: 8px;
   margin-top: 12px;
 }
+/* Additional CSP compliance classes */
+.map-priority-text-critical { color: #ef4444; }
+.map-priority-border-critical { border-left-color: #ef4444; }
+.map-priority-text-high { color: #f97316; }
+.map-priority-border-high { border-left-color: #f97316; }
+.map-priority-text-medium { color: #059669; }
+.map-priority-border-medium { border-left-color: #059669; }
+.map-priority-text-low { color: #3b82f6; }
+.map-priority-border-low { border-left-color: #3b82f6; }
+

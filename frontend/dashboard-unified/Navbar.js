@@ -314,7 +314,7 @@ export default class Navbar {
             <div class="notifications-dropdown" data-notification-dropdown>
               <div class="notifications-header">
                 <h3>Notifications</h3>
-                <div style="display:flex; gap:10px;">
+                <div class="flex gap-2.5">
                   <button type="button" class="text-xs text-emerald-600 font-bold hover:underline" data-mark-all-read>Mark all read</button>
                   <button type="button" class="text-xs text-red-500 font-bold hover:underline" data-clear-all>Clear all</button>
                 </div>

@@ -142,34 +142,34 @@ export default class Donations {
     );
 
     return `
-      <article class="metric-card" style="border-top-color: #059669;">
-        <h3 style="display:flex; justify-content:space-between; align-items:center;">
+      <article class="metric-card border-t-4 border-t-[#059669]">
+        <h3 class="flex justify-between items-center">
           Total
-          <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${Icons.box}</span>
+          <span class="flex dashboard-text-muted opacity-80">${Icons.box}</span>
         </h3>
         <p>${formatNumber(counts.total)}</p>
         <div class="metric-note">All accessible donations</div>
       </article>
-      <article class="metric-card" style="border-top-color: #f59e0b;">
-        <h3 style="display:flex; justify-content:space-between; align-items:center;">
+      <article class="metric-card border-t-4 border-t-[#f59e0b]">
+        <h3 class="flex justify-between items-center">
           Pending
-          <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${Icons.clock}</span>
+          <span class="flex dashboard-text-muted opacity-80">${Icons.clock}</span>
         </h3>
         <p>${formatNumber(counts.pending)}</p>
         <div class="metric-note">Waiting for action</div>
       </article>
-      <article class="metric-card" style="border-top-color: #3b82f6;">
-        <h3 style="display:flex; justify-content:space-between; align-items:center;">
+      <article class="metric-card border-t-4 border-t-[#3b82f6]">
+        <h3 class="flex justify-between items-center">
           Claimed
-          <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${Icons.truck}</span>
+          <span class="flex dashboard-text-muted opacity-80">${Icons.truck}</span>
         </h3>
         <p>${formatNumber(counts.claimed)}</p>
         <div class="metric-note">Reserved for dispatch</div>
       </article>
-      <article class="metric-card" style="border-top-color: #64748b;">
-        <h3 style="display:flex; justify-content:space-between; align-items:center;">
+      <article class="metric-card border-t-4 border-t-[#64748b]">
+        <h3 class="flex justify-between items-center">
           Closed
-          <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${Icons.checkCircle}</span>
+          <span class="flex dashboard-text-muted opacity-80">${Icons.checkCircle}</span>
         </h3>
         <p>${formatNumber(counts.closed)}</p>
         <div class="metric-note">Completed handoff</div>
@@ -216,11 +216,11 @@ export default class Donations {
         // donor can cancel their own pending/broadcasted, volunteer can cancel if accepted by them
         const terminalStatuses = ["closed", "completed", "cancelled", "delivered"];
         if (role === "admin" && !terminalStatuses.includes(donation.status)) {
-          cancelBtn = `<button class="dashboard-button danger sm action-cancel-btn" data-id="${donationId}" style="margin-left:4px;">Cancel</button>`;
+          cancelBtn = `<button class="dashboard-button danger sm action-cancel-btn" data-id="${donationId}" class="ml-1">Cancel</button>`;
         } else if (role === "donor" && (donation.status === "pending" || donation.status === "broadcasted")) {
-          cancelBtn = `<button class="dashboard-button danger sm action-cancel-btn" data-id="${donationId}" style="margin-left:4px;">Cancel</button>`;
+          cancelBtn = `<button class="dashboard-button danger sm action-cancel-btn" data-id="${donationId}" class="ml-1">Cancel</button>`;
         } else if (role === "volunteer" && donation.status === "accepted") {
-          cancelBtn = `<button class="dashboard-button danger sm action-cancel-btn" data-id="${donationId}" style="margin-left:4px;">Cancel</button>`;
+          cancelBtn = `<button class="dashboard-button danger sm action-cancel-btn" data-id="${donationId}" class="ml-1">Cancel</button>`;
         }
 
         if (role === "ngo" && (donation.status === "pending" || donation.status === "broadcasted") && !donation.claimedBy) {
@@ -394,7 +394,7 @@ export default class Donations {
               .custom-scroll::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
             </style>
             
-            <div class="flex gap-5 overflow-x-auto pb-4 pt-1 snap-x snap-mandatory custom-scroll pl-1" style="-webkit-overflow-scrolling: touch;">
+            <div class="flex gap-5 overflow-x-auto pb-4 pt-1 snap-x snap-mandatory custom-scroll pl-1" >
               ${itemList}
             </div>
           </div>
@@ -541,7 +541,7 @@ export default class Donations {
         this.bindItemDetails();
       } catch (error) {
         summaryEl.innerHTML = `
-          <article class="dashboard-panel" style="grid-column: 1 / -1;">
+          <article class="dashboard-panel col-span-full">
             <div class="dashboard-panel-body">
               ${renderInlineState(`Unable to load donation stats: ${error.message}`, "error")}
             </div>

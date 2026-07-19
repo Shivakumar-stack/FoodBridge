@@ -994,9 +994,18 @@ const MapModule = {
       ? `0 0 0 4px ${color}44, 0 4px 12px rgba(15, 23, 42, 0.4)`
       : "0 2px 7px rgba(15, 23, 42, 0.38)";
 
+    const div = document.createElement("div");
+    const span = document.createElement("span");
+    span.className = `map-donation-dot${isSelected ? " is-selected" : ""} ${priority.className || ""}`;
+    span.style.setProperty("--marker-size", `${size}px`);
+    span.style.setProperty("--marker-border", `${borderSize}px`);
+    span.style.backgroundColor = color;
+    span.style.boxShadow = shadow;
+    div.appendChild(span);
+
     return L.divIcon({
       className: "map-donation-icon map-donation-hitbox",
-      html: `<span class="map-donation-dot${isSelected ? " is-selected" : ""}" style="--marker-color:${color};--marker-size:${size}px;--marker-border:${borderSize}px;--marker-shadow:${shadow}"></span>`,
+      html: div,
       iconSize: [32, 32],
       iconAnchor: [16, 16],
       popupAnchor: [0, -14],
@@ -1294,7 +1303,7 @@ const MapModule = {
           <p class="map-popup-meta"><i class="fas fa-building"></i> ${donorName}</p>
           <p class="map-popup-meta"><i class="fas fa-location-dot"></i> ${this.escapeHtml(shortAddress)}</p>
           <div class="map-popup-stats">
-            <strong style="color: ${priority.color}; border-left: 3px solid ${priority.color}; padding-left: 6px; font-size: 13px; line-height: 1;">${priority.label}</strong>
+            <strong class="map-popup-priority-text map-priority-text-${priority.bucket}">${priority.label}</strong>
             <span class="map-popup-badge status">${status}</span>
           </div>
         </div>
@@ -1357,47 +1366,46 @@ const MapModule = {
     let imageSection = "";
     if (imageUrl) {
       imageSection = `
-        <div style="margin: 16px 0;">
+        <div class="my-4">
           <img src="${this.escapeHtml(imageUrl)}" alt="Donation photo"
-            style="width: 100%; height: 220px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"
-            class="zoomable-img cursor-pointer" data-zoom-url="${this.escapeHtml(imageUrl)}" />
+            class="w-full h-[220px] object-cover rounded-xl shadow-sm zoomable-img cursor-pointer" data-zoom-url="${this.escapeHtml(imageUrl)}" />
         </div>
       `;
     }
 
     return `
-      <div style="padding: 4px;">
-        <div style="border-left: 4px solid ${priority.color}; padding-left: 12px; margin-bottom: 16px;">
-          <h3 style="margin: 0; font-size: 18px; font-weight: 800; color: #111827;">${foodName}</h3>
-          <p style="margin: 4px 0 0; font-size: 13px; color: #6b7280; font-weight: 500;">${donorName}</p>
+      <div class="p-1">
+        <div class="border-l-4 pl-3 mb-4 map-priority-border-${priority.bucket}">
+          <h3 class="m-0 text-lg font-extrabold text-gray-900">${foodName}</h3>
+          <p class="mt-1 mb-0 text-sm font-medium text-gray-500">${donorName}</p>
         </div>
 
         ${imageSection}
 
-        <div style="margin-top: 24px; padding: 0 4px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; font-size: 14px;">
-            <span style="color: #9ca3af; font-weight: 500;">Priority</span>
-            <strong style="color: ${priority.color}; border-left: 3px solid ${priority.color}; padding-left: 8px;">${priority.label}</strong>
+        <div class="mt-6 px-1">
+          <div class="flex justify-between items-center mb-4 text-sm">
+            <span class="font-medium text-gray-400">Priority</span>
+            <strong class="border-l-4 pl-2 map-priority-text-${priority.bucket} map-priority-border-${priority.bucket}">${priority.label}</strong>
           </div>
-          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px; margin-bottom: 16px;">
-            <span style="color: #9ca3af; font-weight: 500;">Status</span>
-            <strong style="color: #111827;">${status}</strong>
+          <div class="flex justify-between items-center text-sm mb-4">
+            <span class="font-medium text-gray-400">Status</span>
+            <strong class="text-gray-900">${status}</strong>
           </div>
-          <div style="display: flex; flex-direction: column; gap: 4px; font-size: 14px; margin-bottom: 16px;">
-            <span style="color: #9ca3af; font-weight: 500;">Full Address</span>
-            <strong style="color: #111827; line-height: 1.4;">${fullAddress}</strong>
+          <div class="flex flex-col gap-1 text-sm mb-4">
+            <span class="font-medium text-gray-400">Full Address</span>
+            <strong class="text-gray-900 leading-relaxed">${fullAddress}</strong>
           </div>
-          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px; margin-bottom: 16px;">
-            <span style="color: #9ca3af; font-weight: 500;">Impact</span>
-            <strong style="color: #111827;">${impact}</strong>
+          <div class="flex justify-between items-center text-sm mb-4">
+            <span class="font-medium text-gray-400">Impact</span>
+            <strong class="text-gray-900">${impact}</strong>
           </div>
-          <div style="display: flex; flex-direction: column; gap: 4px; font-size: 14px; margin-bottom: 24px;">
-            <span style="color: #9ca3af; font-weight: 500;">Donor Notes</span>
-            <strong style="color: #111827; line-height: 1.4;">${notes}</strong>
+          <div class="flex flex-col gap-1 text-sm mb-6">
+            <span class="font-medium text-gray-400">Donor Notes</span>
+            <strong class="text-gray-900 leading-relaxed">${notes}</strong>
           </div>
         </div>
 
-        ${actionButton ? `<div class="map-detail-actions" style="margin-top: 16px;">${actionButton}</div>` : ''}
+        ${actionButton ? `<div class="map-detail-actions mt-4">${actionButton}</div>` : ''}
       </div>
     `;
   },

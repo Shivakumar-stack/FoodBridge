@@ -142,4 +142,15 @@ if (!ensureDashboardSession()) {
   bindToggleListeners();
   bindCloseListeners();
   syncSidebarState();
+
+  // Global delegation for expandable rows
+  const dashboardMain = document.getElementById("dashboard-main");
+  if (dashboardMain) {
+    dashboardMain.addEventListener("click", (e) => {
+      const row = e.target.closest(".expandable-row");
+      if (row && !e.target.closest("button") && !e.target.classList.contains("zoomable-img")) {
+        row.classList.toggle("expanded");
+      }
+    });
+  }
 }

@@ -184,26 +184,26 @@ export default class Volunteers {
     );
 
     return `
-      <article class="metric-card" style="border-top-color: #059669;">
-        <h3 style="display:flex; justify-content:space-between; align-items:center;">
+      <article class="metric-card border-t-4 border-t-[#059669]">
+        <h3 class="flex justify-between items-center">
           Queue Size
-          <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${Icons.clipboard}</span>
+          <span class="flex dashboard-text-muted opacity-80">${Icons.clipboard}</span>
         </h3>
         <p>${formatNumber(counts.queue)}</p>
         <div class="metric-note">Pending pickups</div>
       </article>
-      <article class="metric-card" style="border-top-color: #ef4444;">
-        <h3 style="display:flex; justify-content:space-between; align-items:center;">
+      <article class="metric-card border-t-4 border-t-[#ef4444]">
+        <h3 class="flex justify-between items-center">
           High Priority
-          <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${Icons.alertTriangle}</span>
+          <span class="flex dashboard-text-muted opacity-80">${Icons.alertTriangle}</span>
         </h3>
         <p>${formatNumber(counts.highPriority)}</p>
         <div class="metric-note">Urgent actions</div>
       </article>
-      <article class="metric-card" style="border-top-color: #3b82f6;">
-        <h3 style="display:flex; justify-content:space-between; align-items:center;">
+      <article class="metric-card border-t-4 border-t-[#3b82f6]">
+        <h3 class="flex justify-between items-center">
           Today Pickups
-          <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${Icons.calendar}</span>
+          <span class="flex dashboard-text-muted opacity-80">${Icons.calendar}</span>
         </h3>
         <p>${formatNumber(counts.today)}</p>
         <div class="metric-note">Scheduled for today</div>
@@ -369,7 +369,7 @@ export default class Volunteers {
 
     if (!this.canViewVolunteerQueue()) {
       summaryEl.innerHTML = `
-        <article class="dashboard-panel" style="grid-column: 1 / -1;">
+        <article class="dashboard-panel col-span-full">
           <div class="dashboard-panel-body">
             ${renderInlineState("Volunteer queue visibility is available for volunteer/admin roles only.", "warning")}
           </div>
@@ -462,7 +462,7 @@ export default class Volunteers {
       await this.loadVolunteerApplications();
     } catch (error) {
       summaryEl.innerHTML = `
-        <article class="dashboard-panel" style="grid-column: 1 / -1;">
+        <article class="dashboard-panel col-span-full">
           <div class="dashboard-panel-body">
             ${renderInlineState(`Unable to load volunteer queue: ${error.message}`, "error")}
           </div>

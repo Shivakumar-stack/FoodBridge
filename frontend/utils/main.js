@@ -40,6 +40,30 @@ window.addEventListener("unhandledrejection", (event) => {
 async function main() {
   const serverStatus = document.getElementById("server-status");
 
+  // Set copyright year globally (replacing inline scripts)
+  document.querySelectorAll('.copyright-year').forEach(el => {
+    el.textContent = new Date().getFullYear();
+  });
+
+  // Global newsletter form handler (replacing inline onsubmit)
+  const newsletterForm = document.getElementById('newsletterFormGlobal');
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const btn = newsletterForm.querySelector('button');
+      const input = newsletterForm.querySelector('input');
+      if (btn && input) {
+        btn.innerHTML = '<i class="fas fa-check"></i> Subscribed';
+        btn.classList.add('bg-emerald-700');
+        fetch('/api/newsletter/subscribe', {
+          method: 'POST',
+          body: JSON.stringify({ email: input.value }),
+          headers: { 'Content-Type': 'application/json' }
+        }).catch(console.error);
+      }
+    });
+  }
+
   try {
     // Check if appConfig is loaded
     if (

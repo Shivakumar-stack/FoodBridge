@@ -81,8 +81,8 @@ export default class Map {
               </div>
             </aside>
 
-            <div class="dashboard-map-status-wrap" style="position: absolute; bottom: 20px; right: 20px; z-index: 1000; pointer-events: none;">
-              <div id="socketStatusIndicator" class="map-status-pill" style="pointer-events: auto; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border: 1px solid #e5e7eb; padding: 6px 14px; border-radius: 9999px; font-size: 12px; font-weight: 600; box-shadow: 0 4px 12px rgba(0,0,0,0.08); display: flex; align-items: center; gap: 6px; color: #4b5563;">
+            <div class="dashboard-map-status-wrap" class="absolute bottom-5 right-5 z-[1000] pointer-events-none">
+              <div id="socketStatusIndicator" class="map-status-pill" class="pointer-events-auto bg-white/95 backdrop-blur-sm border border-gray-200 px-3.5 py-1.5 rounded-full text-xs font-semibold shadow-md flex items-center gap-1.5 text-gray-600">
                 <i class="fas fa-circle-notch fa-spin text-emerald-500"></i> Connecting...
               </div>
             </div>

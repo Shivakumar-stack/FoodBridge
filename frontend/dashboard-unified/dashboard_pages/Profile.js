@@ -61,7 +61,7 @@ export default class Profile {
         
         <!-- General Tab -->
         <div id="tab-general" class="profile-tab-pane active">
-          <article class="dashboard-panel" style="max-width: 800px;">
+          <article class="dashboard-panel max-w-[800px]">
             <div class="dashboard-panel-header">
               <div>
                 <h2 class="dashboard-panel-title">Personal Information</h2>
@@ -88,7 +88,7 @@ export default class Profile {
                     <input id="profileCity" name="city" class="dashboard-input" value="${escapeHtml(this.user.city || this.user.address?.city || "")}" placeholder="Operational Region">
                   </div>
                 </div>
-                <div class="dashboard-actions" style="margin-top: 16px;">
+                <div class="dashboard-actions mt-4">
                   <button type="submit" id="profileSubmitBtn" class="dashboard-button">Save Changes</button>
                   <span id="profileFeedback"></span>
                 </div>
@@ -99,7 +99,7 @@ export default class Profile {
 
         <!-- Security Tab -->
         <div id="tab-security" class="profile-tab-pane">
-          <article class="dashboard-panel" style="max-width: 800px;">
+          <article class="dashboard-panel max-w-[800px]">
             <div class="dashboard-panel-header">
               <div>
                 <h2 class="dashboard-panel-title">Update Password</h2>
@@ -122,7 +122,7 @@ export default class Profile {
                     <input id="confirmPassword" name="confirmPassword" type="password" class="dashboard-input" required minlength="8">
                   </div>
                 </div>
-                <div class="dashboard-actions" style="margin-top: 16px;">
+                <div class="dashboard-actions mt-4">
                   <button type="submit" id="passwordSubmitBtn" class="dashboard-button">Update Password</button>
                   <span id="passwordFeedback"></span>
                 </div>
@@ -133,7 +133,7 @@ export default class Profile {
 
         <!-- Operational Tab -->
         <div id="tab-operational" class="profile-tab-pane">
-          <article class="dashboard-panel" style="max-width: 800px;">
+          <article class="dashboard-panel max-w-[800px]">
             <div class="dashboard-panel-header">
               <div>
                 <h2 class="dashboard-panel-title">Operational Details</h2>
@@ -145,7 +145,7 @@ export default class Profile {
                 <div class="dashboard-form-grid">
                   ${this.renderRoleFields()}
                 </div>
-                <div class="dashboard-actions" style="margin-top: 16px;">
+                <div class="dashboard-actions mt-4">
                   <button type="submit" id="operationalSubmitBtn" class="dashboard-button">Save Operational Info</button>
                   <span id="operationalFeedback"></span>
                 </div>
@@ -169,34 +169,34 @@ export default class Profile {
   renderImpact(stats = {}) {
     return `
       <div class="dashboard-grid cols-2">
-        <article class="metric-card" style="border-top-color: #059669;">
-          <h3 style="display:flex; justify-content:space-between; align-items:center;">
+        <article class="metric-card border-t-4 border-t-[#059669]">
+          <h3 class="flex justify-between items-center">
             Total Donations
-            <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${Icons.box}</span>
+            <span class="flex dashboard-text-muted opacity-80">${Icons.box}</span>
           </h3>
           <p>${formatNumber(stats.totalDonations)}</p>
           <div class="metric-note">Role-scoped submissions</div>
         </article>
-        <article class="metric-card" style="border-top-color: #3b82f6;">
-          <h3 style="display:flex; justify-content:space-between; align-items:center;">
+        <article class="metric-card border-t-4 border-t-[#3b82f6]">
+          <h3 class="flex justify-between items-center">
             Total Servings
-            <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${Icons.utensils}</span>
+            <span class="flex dashboard-text-muted opacity-80">${Icons.utensils}</span>
           </h3>
           <p>${formatNumber(stats.totalServings)}</p>
           <div class="metric-note">Estimated delivered portions</div>
         </article>
-        <article class="metric-card" style="border-top-color: #8b5cf6;">
-          <h3 style="display:flex; justify-content:space-between; align-items:center;">
+        <article class="metric-card border-t-4 border-t-[#8b5cf6]">
+          <h3 class="flex justify-between items-center">
             Communities Served
-            <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${Icons.building}</span>
+            <span class="flex dashboard-text-muted opacity-80">${Icons.building}</span>
           </h3>
           <p>${formatNumber(stats.communitiesServed)}</p>
           <div class="metric-note">Unique city clusters</div>
         </article>
-        <article class="metric-card" style="border-top-color: #f59e0b;">
-          <h3 style="display:flex; justify-content:space-between; align-items:center;">
+        <article class="metric-card border-t-4 border-t-[#f59e0b]">
+          <h3 class="flex justify-between items-center">
             Account Status
-            <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${Icons.shield}</span>
+            <span class="flex dashboard-text-muted opacity-80">${Icons.shield}</span>
           </h3>
           <p>${escapeHtml(toTitleCase(this.user.status || "active"))}</p>
           <div class="metric-note">Current profile state</div>
