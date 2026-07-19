@@ -25,38 +25,11 @@
     />
     <link rel="stylesheet" href="../styles/main.css" />
     
-    <style>
-      .server-status {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-        padding: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.75rem;
-        font-size: 0.9rem;
-        transition: all 0.3s ease-in-out;
-      }
-
-      .server-status-ok {
-        background-color: #f0fdf4;
-        color: #166534;
-        border-bottom: 1px solid #bbf7d0;
-      }
-
-      .server-status-error {
-        background-color: #fef2f2;
-        color: #991b1b;
-        border-bottom: 1px solid #fecaca;
-      }
-    </style>
+    
   </head>
 
   <body class="font-sans text-gray-800 bg-white antialiased">
-    <div id="server-status" class="server-status" style="display: none"></div>
+    <div id="server-status" class="server-status hidden"></div>
 
     <!-- Navigation -->
     <nav
@@ -139,20 +112,20 @@
       <div
         id="mobileMenu"
         class="lg:hidden hidden"
-        style="position: fixed; inset: 0; z-index: 100; background: white; overflow-y: auto;"
+        class="fixed inset-0 z-[100] bg-white overflow-y-auto"
       >
         <!-- Mobile Menu Header with Close -->
-        <div style="display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; border-bottom: 1px solid #f3f4f6;">
-          <a href="index.html" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none;">
-            <div style="width: 2.5rem; height: 2.5rem; border-radius: 9999px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-              <img src="../assets/images/logo.png" alt="FoodBridge Logo" style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="flex items-center justify-between px-5 py-4 border-b border-gray-100">
+          <a href="index.html" class="flex items-center gap-2 no-underline">
+            <div class="w-10 h-10 rounded-full overflow-hidden shadow-sm">
+              <img src="../assets/images/logo.png" alt="FoodBridge Logo" class="w-full h-full object-cover">
             </div>
-            <span style="font-size: 1.25rem; font-weight: 700; color: #111827;">FoodBridge</span>
+            <span class="text-xl font-bold text-gray-900">FoodBridge</span>
           </a>
           <button
             id="mobileCloseBtn"
             type="button"
-            style="padding: 0.5rem; border-radius: 0.5rem; border: none; background: #ecfdf5; color: #374151; cursor: pointer; font-size: 1.25rem; line-height: 1; display: flex; align-items: center; justify-content: center;"
+            class="p-2 rounded-lg border-none bg-emerald-50 text-gray-700 cursor-pointer text-xl leading-none flex items-center justify-center"
             aria-label="Close menu"
           >
             <i class="fas fa-times"></i>
@@ -226,8 +199,7 @@
           class="absolute top-32 lg:top-40 right-10 lg:right-20 w-12 lg:w-16 h-12 lg:h-16 bg-emerald-200/20 rounded-2xl hidden md:block animate-float"
         ></div>
         <div
-          class="absolute bottom-32 lg:bottom-40 left-10 lg:left-20 w-10 lg:w-12 h-10 lg:h-12 bg-emerald-100/20 rounded-full hidden md:block animate-float"
-          style="animation-delay: 1s"
+          class="absolute bottom-32 lg:bottom-40 left-10 lg:left-20 w-10 lg:w-12 h-10 lg:h-12 bg-emerald-100/20 rounded-full hidden md:block animate-float [animation-delay:1s]"
         ></div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -410,14 +382,12 @@
                       <i class="fas fa-map-marker-alt text-white text-sm"></i>
                     </div>
                     <div
-                      class="absolute top-1/2 right-1/3 w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center shadow-lg animate-pin-bounce"
-                      style="animation-delay: 0.5s"
+                      class="absolute top-1/2 right-1/3 w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center shadow-lg animate-pin-bounce [animation-delay:0.5s]"
                     >
                       <i class="fas fa-heart text-white text-sm"></i>
                     </div>
                     <div
-                      class="absolute bottom-1/4 left-1/2 w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center shadow-lg animate-pin-bounce"
-                      style="animation-delay: 1s"
+                      class="absolute bottom-1/4 left-1/2 w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center shadow-lg animate-pin-bounce [animation-delay:1s]"
                     >
                       <i class="fas fa-utensils text-white text-sm"></i>
                     </div>
