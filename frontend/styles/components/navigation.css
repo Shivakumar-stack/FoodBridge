@@ -1,0 +1,31 @@
+/* Navigation Link */
+.nav-link {
+  position: relative;
+  color: #475569;
+  font-weight: 500;
+  transition: color 150ms ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #059669, #34d399);
+  transition: width 250ms ease;
+}
+
+.nav-link:hover {
+  color: #059669;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: #059669;
+}
+
