@@ -64,18 +64,49 @@ export default class Navbar {
       notificationBtn.addEventListener("click", (e) => {
         e.stopPropagation();
         notificationDropdown.classList.toggle("show");
-      });
-
-      // Close dropdown on click outside
-      document.addEventListener("click", (e) => {
-        if (
-          notificationBtn && !notificationBtn.contains(e.target) &&
-          notificationDropdown && !notificationDropdown.contains(e.target)
-        ) {
-          notificationDropdown.classList.remove("show");
-        }
+        if (avatarDropdown) avatarDropdown.classList.remove("show");
       });
     }
+
+    const avatarBtn = this.navbar?.querySelector("[data-avatar-trigger]");
+    const avatarDropdown = this.navbar?.querySelector("[data-avatar-dropdown]");
+
+    if (avatarBtn && avatarDropdown) {
+      avatarBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const isShowing = avatarDropdown.classList.toggle("show");
+        avatarBtn.setAttribute("aria-expanded", isShowing ? "true" : "false");
+        if (notificationDropdown) notificationDropdown.classList.remove("show");
+      });
+    }
+
+    // Close dropdowns on click outside
+    document.addEventListener("click", (e) => {
+      if (
+        notificationBtn && !notificationBtn.contains(e.target) &&
+        notificationDropdown && !notificationDropdown.contains(e.target)
+      ) {
+        notificationDropdown.classList.remove("show");
+      }
+      if (
+        avatarBtn && !avatarBtn.contains(e.target) &&
+        avatarDropdown && !avatarDropdown.contains(e.target)
+      ) {
+        avatarDropdown.classList.remove("show");
+        avatarBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    // Close on ESC
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        if (notificationDropdown) notificationDropdown.classList.remove("show");
+        if (avatarDropdown) {
+          avatarDropdown.classList.remove("show");
+          if (avatarBtn) avatarBtn.setAttribute("aria-expanded", "false");
+        }
+      }
+    });
 
     const markAllBtn = this.navbar?.querySelector("[data-mark-all-read]");
     if (markAllBtn) {
@@ -287,9 +318,9 @@ export default class Navbar {
     this.navbar.innerHTML = `
       <header class="dashboard-topbar">
         <div class="dashboard-topbar-left">
-          <button class="dashboard-fab-toggle" type="button" data-sidebar-toggle aria-expanded="true" aria-label="Collapse sidebar">
+          <button class="dashboard-fab-toggle" type="button" data-sidebar-toggle aria-expanded="true" aria-label="Toggle sidebar">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
           <a href="/pages/index.html" class="dashboard-home-chip" aria-label="Go to home page">
@@ -301,6 +332,12 @@ export default class Navbar {
           <div class="dashboard-topbar-copy">
             <h1 data-dashboard-title>${escapeHtml(this.pageTitle)}</h1>
             <p data-dashboard-subtitle>${escapeHtml(this.pageSubtitle)}</p>
+          </div>
+          <div class="dash-search-container is-hidden" aria-hidden="true">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m1.35-5.65a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input type="text" class="dash-search-input" placeholder="Search..." aria-label="Search dashboard" disabled>
           </div>
         </div>
         <div class="dashboard-actions">
@@ -314,9 +351,9 @@ export default class Navbar {
             <div class="notifications-dropdown" data-notification-dropdown>
               <div class="notifications-header">
                 <h3>Notifications</h3>
-                <div class="flex gap-2.5">
-                  <button type="button" class="text-xs text-emerald-600 font-bold hover:underline" data-mark-all-read>Mark all read</button>
-                  <button type="button" class="text-xs text-red-500 font-bold hover:underline" data-clear-all>Clear all</button>
+                <div class="dash-flex-gap">
+                  <button type="button" class="dash-link-btn text-emerald" data-mark-all-read>Mark all read</button>
+                  <button type="button" class="dash-link-btn text-danger" data-clear-all>Clear all</button>
                 </div>
               </div>
               <div class="notifications-list" data-notification-list>
@@ -331,16 +368,33 @@ export default class Navbar {
             </div>
           </div>
 
-          <span class="dashboard-user-chip" aria-label="Signed in user">
-            <span class="dashboard-avatar" aria-hidden="true">${escapeHtml(avatarInitials)}</span>
-            <span class="dashboard-user-meta">
-              <strong>${escapeHtml(displayName)}</strong>
-              <span>${escapeHtml(role)}</span>
-            </span>
-          </span>
-          <button type="button" class="dashboard-logout-btn" data-dashboard-logout>
-            Logout
-          </button>
+          <div class="dashboard-avatar-wrap">
+            <button type="button" class="dashboard-user-chip" aria-label="Open user menu" aria-haspopup="menu" aria-expanded="false" data-avatar-trigger>
+              <span class="dashboard-avatar" aria-hidden="true">${escapeHtml(avatarInitials)}</span>
+              <span class="dashboard-user-meta">
+                <strong>${escapeHtml(displayName)}</strong>
+                <span>${escapeHtml(role)}</span>
+              </span>
+            </button>
+            <div class="avatar-dropdown" role="menu" data-avatar-dropdown>
+              <div class="avatar-dropdown-header">
+                <strong>${escapeHtml(displayName)}</strong>
+                <span>${escapeHtml(this.user?.email || "")}</span>
+              </div>
+              <div class="avatar-dropdown-menu">
+                <a href="#/profile" class="avatar-dropdown-item" role="menuitem"><i class="fas fa-user"></i> Profile</a>
+                <button type="button" class="avatar-dropdown-item" role="menuitem"><i class="fas fa-cog"></i> Settings</button>
+                <a href="#/notifications" class="avatar-dropdown-item" role="menuitem"><i class="fas fa-bell"></i> Notifications</a>
+                <button type="button" class="avatar-dropdown-item" role="menuitem"><i class="fas fa-question-circle"></i> Help</button>
+                <button type="button" class="avatar-dropdown-item" role="menuitem"><i class="fas fa-moon"></i> Theme</button>
+              </div>
+              <div class="avatar-dropdown-footer">
+                <button type="button" class="avatar-dropdown-item text-danger" role="menuitem" data-dashboard-logout>
+                  <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
     `;
