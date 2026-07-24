@@ -57,7 +57,7 @@ export default class Overview {
               <p class="dashboard-panel-subtitle">Last seven days of dashboard activity.</p>
             </div>
           </div>
-          <div class="dashboard-panel-body" style="height: 280px;">
+          <div class="dashboard-panel-body h-[280px]">
             <canvas id="sevenDayChart" aria-label="Weekly donation chart"></canvas>
           </div>
         </article>
@@ -147,9 +147,9 @@ export default class Overview {
       .map(
         (card) => `
           <article class="metric-card">
-            <h3 style="display:flex; justify-content:space-between; align-items:center;">
+            <h3 class="flex justify-between items-center">
               ${escapeHtml(card.label)}
-              <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${card.icon}</span>
+              <span class="flex dashboard-text-muted opacity-80">${card.icon}</span>
             </h3>
             <p>${escapeHtml(card.value)}</p>
             <div class="metric-note">${escapeHtml(card.note)}</div>
@@ -209,10 +209,10 @@ export default class Overview {
       .map((record) => {
         const imageUrl = this.getImageUrl(record);
         const imageCell = imageUrl
-          ? `<img src="${escapeHtml(imageUrl)}" alt="Donation item" loading="lazy" class="zoomable-img" data-zoom-url="${escapeHtml(imageUrl)}" style="width:44px;height:44px;object-fit:cover;border-radius:10px;border:1px solid var(--dash-border);cursor:pointer;transition:transform 0.2s;">`
-          : `<span style="color:var(--dash-text-muted);font-size:12px;">No image</span>`;
+          ? `<img src="${escapeHtml(imageUrl)}" alt="Donation item" loading="lazy" data-zoom-url="${escapeHtml(imageUrl)}" class="zoomable-img w-[44px] h-[44px] object-cover rounded-[10px] border border-gray-200 cursor-pointer transition-transform duration-200 hover:scale-105">`
+          : `<span class="text-xs text-gray-500">No image</span>`;
         return `
-          <tr class="expandable-row" onclick="if(!event.target.closest('button') && !event.target.classList.contains('zoomable-img')) this.classList.toggle('expanded')">
+          <tr class="expandable-row">
             <td>${imageCell}</td>
             <td>${escapeHtml(record.donorName || "Unknown")}</td>
             <td class="truncate-cell" title="Click to expand">${escapeHtml(record.items || "-")}</td>
@@ -220,7 +220,7 @@ export default class Overview {
             <td>${escapeHtml(record.city || "-")}</td>
             <td>${getStatusBadge(record.status)}</td>
             <td>${escapeHtml(formatDate(record.createdAt))}</td>
-            <td class="truncate-cell" style="font-size:12px;color:var(--dash-text-muted);" title="Click to expand">${escapeHtml(record.notes || '-')}</td>
+            <td class="truncate-cell text-xs text-gray-500" title="Click to expand">${escapeHtml(record.notes || '-')}</td>
           </tr>
         `;
       })
@@ -247,7 +247,7 @@ export default class Overview {
         impactListEl.innerHTML = this.renderImpactList(stats);
       } else {
         statCardsEl.innerHTML = `
-        <article class="dashboard-panel" style="grid-column: 1 / -1;">
+        <article class="dashboard-panel col-span-full">
           <div class="dashboard-panel-body">
             ${renderInlineState(`Unable to load dashboard stats: ${statsResult.reason?.message || "Unknown error"}`, "error")}
           </div>
@@ -363,3 +363,4 @@ export default class Overview {
     });
   }
 }
+

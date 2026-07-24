@@ -75,7 +75,7 @@ export default class Requests {
                       <textarea id="notes" name="notes" class="dashboard-textarea" placeholder="Distribution timing, dietary constraints, etc."></textarea>
                     </div>
                   </div>
-                  <div class="dashboard-actions" style="margin-top: 12px;">
+                  <div class="dashboard-actions mt-3">
                     <button type="submit" id="requestSubmitBtn" class="dashboard-button">Submit Request</button>
                     <span id="requestFormFeedback"></span>
                   </div>
@@ -145,26 +145,26 @@ export default class Requests {
     );
 
     return `
-      <article class="metric-card" style="border-top-color: #059669;">
-        <h3 style="display:flex; justify-content:space-between; align-items:center;">
+      <article class="metric-card border-t-4 border-t-[#059669]">
+        <h3 class="flex justify-between items-center">
           Total Requests
-          <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${Icons.megaphone}</span>
+          <span class="flex dashboard-text-muted opacity-80">${Icons.megaphone}</span>
         </h3>
         <p>${formatNumber(counts.total)}</p>
         <div class="metric-note">Recent demand records</div>
       </article>
-      <article class="metric-card" style="border-top-color: #f59e0b;">
-        <h3 style="display:flex; justify-content:space-between; align-items:center;">
+      <article class="metric-card border-t-4 border-t-[#f59e0b]">
+        <h3 class="flex justify-between items-center">
           Pending
-          <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${Icons.clock}</span>
+          <span class="flex dashboard-text-muted opacity-80">${Icons.clock}</span>
         </h3>
         <p>${formatNumber(counts.pending)}</p>
         <div class="metric-note">Awaiting allocation</div>
       </article>
-      <article class="metric-card" style="border-top-color: #8b5cf6;">
-        <h3 style="display:flex; justify-content:space-between; align-items:center;">
+      <article class="metric-card border-t-4 border-t-[#8b5cf6]">
+        <h3 class="flex justify-between items-center">
           Fulfilled
-          <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${Icons.party}</span>
+          <span class="flex dashboard-text-muted opacity-80">${Icons.party}</span>
         </h3>
         <p>${formatNumber(counts.fulfilled)}</p>
         <div class="metric-note">Completed requests</div>
@@ -186,7 +186,7 @@ export default class Requests {
     return requests
       .map(
         (request) => `
-          <tr class="expandable-row" onclick="if(!event.target.closest('button')) this.classList.toggle('expanded')">
+          <tr class="expandable-row">
             <td>${escapeHtml(request.ngoName || "NGO")}</td>
             <td class="truncate-cell" title="Click to expand">${escapeHtml(request.foodNeeded || "-")}</td>
             <td>${escapeHtml(request.quantity || "-")}</td>
@@ -211,7 +211,7 @@ export default class Requests {
       bodyEl.innerHTML = this.renderRows(requests);
     } catch (error) {
       summaryEl.innerHTML = `
-        <article class="dashboard-panel" style="grid-column: 1 / -1;">
+        <article class="dashboard-panel col-span-full">
           <div class="dashboard-panel-body">
             ${renderInlineState(`Unable to load request summary: ${error.message}`, "error")}
           </div>
@@ -312,3 +312,4 @@ export default class Requests {
     }
   }
 }
+

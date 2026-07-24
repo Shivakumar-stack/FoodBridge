@@ -76,7 +76,7 @@ export default class Reports {
       : `<div class="dashboard-inline-state">No contact messages yet.</div>`;
 
     return `
-      <article class="dashboard-panel" style="grid-column: 1 / -1;">
+      <article class="dashboard-panel col-span-full">
         <div class="dashboard-panel-header">
           <div>
             <h2 class="dashboard-panel-title">Recent Contact Messages</h2>

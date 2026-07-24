@@ -22,7 +22,7 @@
     />
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
     
 
   </head>
@@ -105,29 +105,13 @@
         </div>
       </div>
 
-      <!-- Mobile Menu -->
+    </nav>
+
+          <!-- Mobile Menu -->
       <div
         id="mobileMenu"
-        class="lg:hidden hidden"
-        style="position: fixed; inset: 0; z-index: 100; background: white; overflow-y: auto;"
+        class="lg:hidden hidden fixed top-16 left-0 right-0 bottom-0 z-40 bg-white overflow-y-auto"
       >
-        <!-- Mobile Menu Header with Close -->
-        <div style="display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; border-bottom: 1px solid #f3f4f6;">
-          <a href="index.html" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none;">
-            <div style="width: 2.5rem; height: 2.5rem; border-radius: 9999px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-              <img src="../assets/images/logo.png" alt="FoodBridge Logo" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <span style="font-size: 1.25rem; font-weight: 700; color: #111827;">FoodBridge</span>
-          </a>
-          <button
-            id="mobileCloseBtn"
-            type="button"
-            style="padding: 0.5rem; border-radius: 0.5rem; border: none; background: #ecfdf5; color: #374151; cursor: pointer; font-size: 1.25rem; line-height: 1; display: flex; align-items: center; justify-content: center;"
-            aria-label="Close menu"
-          >
-            <i class="fas fa-times"></i>
-          </button>
-        </div>
         <div class="px-4 py-4 space-y-2">
           <a
             href="../pages/index.html"
@@ -173,7 +157,7 @@
           </div>
         </div>
       </div>
-    </nav>
+
 
     <!-- Page Header with Hero Image -->
     <section
@@ -975,7 +959,7 @@
       <div class="lg:col-span-1">
         <h3 class="text-lg font-semibold text-white mb-6">Stay Updated</h3>
         <p class="text-gray-400 text-sm mb-4">Subscribe to our newsletter for the latest updates on our impact.</p>
-        <form id="newsletterFormGlobal" class="space-y-3" onsubmit="event.preventDefault(); this.querySelector('button').innerHTML='<i class=\'fas fa-check\'></i> Subscribed'; this.querySelector('button').classList.add('bg-emerald-700'); fetch('/api/newsletter/subscribe', {method: 'POST', body: JSON.stringify({email: this.querySelector('input').value}), headers: {'Content-Type': 'application/json'}});">
+        <form id="newsletterFormGlobal" class="space-y-3" >
           <div class="relative">
             <i class="fas fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"></i>
             <input type="email" placeholder="Your email address" required
@@ -991,7 +975,7 @@
     <!-- Copyright -->
     <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
       <p class="text-gray-500 text-sm text-center md:text-left">
-        &copy; <script>document.write(new Date().getFullYear())</script> FoodBridge. All rights reserved.
+        &copy; <span class="copyright-year"></span> FoodBridge. All rights reserved.
       </p>
       <div class="flex gap-6 text-sm">
         <span class="text-gray-500 flex items-center gap-1"><i class="fas fa-heart text-emerald-500"></i> Made for the community</span>

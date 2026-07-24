@@ -5,7 +5,7 @@ const STATIC_ASSETS = [
   "/pages/donate.html",
   "/pages/login.html",
   "/pages/dashboard-unified.html",
-  "/styles/main.css",
+  "/styles/styles.css",
   "/styles/dashboard.css",
   "/styles/auth.css",
   "/utils/config.js",

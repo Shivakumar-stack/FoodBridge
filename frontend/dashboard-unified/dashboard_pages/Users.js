@@ -26,7 +26,7 @@ export default class Users {
           </div>
         </div>
         <div class="dashboard-panel-body">
-          <div id="usersAccessState" style="margin-bottom: 12px;"></div>
+          <div id="usersAccessState" class="mb-3"></div>
           <div class="dashboard-table-wrap">
             <table class="dashboard-table" aria-label="Users table">
               <thead>
@@ -113,7 +113,7 @@ export default class Users {
           `${user.firstName || ""} ${user.lastName || ""}`.trim() ||
           "Unknown";
         return `
-          <tr class="expandable-row" onclick="if(!event.target.closest('button')) this.classList.toggle('expanded')">
+          <tr class="expandable-row">
             <td class="truncate-cell" title="Click to expand">${escapeHtml(name)}</td>
             <td class="truncate-cell" title="Click to expand">${escapeHtml(user.email || "-")}</td>
             <td>${escapeHtml(user.role || "-")}</td>
@@ -133,7 +133,7 @@ export default class Users {
 
     if (this.role !== "admin") {
       summaryEl.innerHTML = `
-        <article class="dashboard-panel" style="grid-column: 1 / -1;">
+        <article class="dashboard-panel col-span-full">
           <div class="dashboard-panel-body">
             ${renderInlineState("User directory is restricted to admin role.", "warning")}
           </div>
@@ -164,7 +164,7 @@ export default class Users {
       tableBody.innerHTML = this.renderRows(users);
     } catch (error) {
       summaryEl.innerHTML = `
-        <article class="dashboard-panel" style="grid-column: 1 / -1;">
+        <article class="dashboard-panel col-span-full">
           <div class="dashboard-panel-body">
             ${renderInlineState(`Unable to load user summary: ${error.message}`, "error")}
           </div>
@@ -180,3 +180,4 @@ export default class Users {
     }
   }
 }
+

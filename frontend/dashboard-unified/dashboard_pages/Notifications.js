@@ -39,11 +39,11 @@ export default class Notifications {
           </div>
           <div class="dashboard-actions">
             <button type="button" class="dashboard-button-ghost" id="markAllReadBtn">Mark all as read</button>
-            <button type="button" class="dashboard-button-ghost" style="color: var(--fb-error, #ef4444); border-color: var(--fb-error-border, #fecaca);" id="clearAllBtn">Clear all</button>
+            <button type="button" class="dashboard-button-ghost" class="text-red-500 border-red-200" id="clearAllBtn">Clear all</button>
           </div>
         </div>
         <div class="dashboard-panel-body">
-          <div id="notificationsFeedback" style="margin-bottom: 10px;"></div>
+          <div id="notificationsFeedback" class="mb-2.5"></div>
           <div id="notificationList" class="list-stack">
             <div class="dashboard-inline-state">Loading notifications...</div>
           </div>
@@ -57,26 +57,26 @@ export default class Notifications {
   renderSummary(total, unread) {
     const read = Math.max(total - unread, 0);
     return `
-      <article class="metric-card" style="border-top-color: #059669;">
-        <h3 style="display:flex; justify-content:space-between; align-items:center;">
+      <article class="metric-card border-t-4 border-t-[#059669]">
+        <h3 class="flex justify-between items-center">
           Total Notifications
-          <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${Icons.bell}</span>
+          <span class="flex dashboard-text-muted opacity-80">${Icons.bell}</span>
         </h3>
         <p>${formatNumber(total)}</p>
         <div class="metric-note">Recent alerts</div>
       </article>
-      <article class="metric-card" style="border-top-color: #ef4444;">
-        <h3 style="display:flex; justify-content:space-between; align-items:center;">
+      <article class="metric-card border-t-4 border-t-[#ef4444]">
+        <h3 class="flex justify-between items-center">
           Unread
-          <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${Icons.alertCircle}</span>
+          <span class="flex dashboard-text-muted opacity-80">${Icons.alertCircle}</span>
         </h3>
         <p>${formatNumber(unread)}</p>
         <div class="metric-note">Needs acknowledgement</div>
       </article>
-      <article class="metric-card" style="border-top-color: #64748b;">
-        <h3 style="display:flex; justify-content:space-between; align-items:center;">
+      <article class="metric-card border-t-4 border-t-[#64748b]">
+        <h3 class="flex justify-between items-center">
           Read
-          <span style="display:flex; color: var(--dash-text-muted); opacity: 0.8;">${Icons.inbox}</span>
+          <span class="flex dashboard-text-muted opacity-80">${Icons.inbox}</span>
         </h3>
         <p>${formatNumber(read)}</p>
         <div class="metric-note">Already reviewed</div>
@@ -126,7 +126,7 @@ export default class Notifications {
       listEl.innerHTML = this.renderList(this.notifications);
     } catch (error) {
       summaryEl.innerHTML = `
-        <article class="dashboard-panel" style="grid-column: 1 / -1;">
+        <article class="dashboard-panel col-span-full">
           <div class="dashboard-panel-body">
             ${renderInlineState(`Unable to load notification summary: ${error.message}`, "error")}
           </div>

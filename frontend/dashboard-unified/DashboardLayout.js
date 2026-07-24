@@ -65,12 +65,14 @@ if (!ensureDashboardSession()) {
       main.classList.toggle("sidebar-collapsed", !sidebarOpen);
       overlay.classList.remove("show");
       overlay.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
     } else {
       sidebar.classList.toggle("collapsed", !sidebarOpen);
       sidebar.classList.toggle("mobile-open", sidebarOpen);
       main.classList.add("sidebar-collapsed");
       overlay.classList.toggle("show", sidebarOpen);
       overlay.setAttribute("aria-hidden", String(!sidebarOpen));
+      document.body.style.overflow = sidebarOpen ? "hidden" : "";
     }
 
     toggles.forEach((toggle) => {
@@ -128,6 +130,15 @@ if (!ensureDashboardSession()) {
     }
   });
 
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !isDesktop && sidebarOpen) {
+      sidebarOpen = false;
+      syncSidebarState();
+      const toggle = document.querySelector("[data-sidebar-toggle]");
+      if (toggle) toggle.focus();
+    }
+  });
+
   window.bindDashboardSidebarToggle = bindToggleListeners;
   window.bindDashboardSidebarClose = bindCloseListeners;
 
@@ -142,4 +153,15 @@ if (!ensureDashboardSession()) {
   bindToggleListeners();
   bindCloseListeners();
   syncSidebarState();
+
+  // Global delegation for expandable rows
+  const dashboardMain = document.getElementById("dashboard-main");
+  if (dashboardMain) {
+    dashboardMain.addEventListener("click", (e) => {
+      const row = e.target.closest(".expandable-row");
+      if (row && !e.target.closest("button") && !e.target.classList.contains("zoomable-img")) {
+        row.classList.toggle("expanded");
+      }
+    });
+  }
 }

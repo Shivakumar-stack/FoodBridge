@@ -312,7 +312,7 @@ const authService = {
       overlay = document.createElement("div");
       overlay.className = "loading-overlay";
       overlay.style.position = "fixed";
-      overlay.innerHTML = '<div style="display:flex; align-items:center;"><span class="spinner spinner-sm"></span><span style="margin-left: 12px; font-weight: 500;">Logging out safely...</span></div>';
+      overlay.innerHTML = '<div class="flex items-center"><span class="spinner spinner-sm"></span><span class="ml-3 font-medium">Logging out safely...</span></div>';
       document.body.appendChild(overlay);
     }
 
