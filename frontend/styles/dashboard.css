@@ -1123,9 +1123,22 @@ body.dashboard-page.dashboard-theme {
 }
 
 @media (max-width: 1023px) {
+  .dashboard-sidebar {
+    width: 85vw;
+    max-width: 360px;
+    inset: 0 auto 0 0;
+    border-radius: 0 20px 20px 0;
+    z-index: 50;
+  }
+
+  .sidebar-overlay {
+    z-index: 45;
+  }
+
   .dashboard-sidebar.collapsed {
-    transform: translateX(calc(-100% - 16px));
-    width: 272px; /* Reset width to full on mobile even if collapsed */
+    transform: translateX(-100%);
+    width: 85vw;
+    max-width: 360px;
   }
 
   .dashboard-sidebar.collapsed .sidebar-brand-copy,

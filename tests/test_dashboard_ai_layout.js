@@ -18,7 +18,7 @@ const DONATE_HTML = path.join(ROOT, "frontend", "pages", "donate.html");
 const DASHBOARD_HTML = path.join(ROOT, "frontend", "pages", "dashboard-unified.html");
 const DASHBOARD_ROUTER = path.join(ROOT, "frontend", "dashboard-unified", "router.js");
 const DASHBOARD_LAYOUT = path.join(ROOT, "frontend", "dashboard-unified", "DashboardLayout.js");
-const DONATE_CSS = path.join(ROOT, "frontend", "styles", "main.css");
+const DONATE_CSS = path.join(ROOT, "frontend", "styles", "styles.css");
 const DONATE_JS = path.join(ROOT, "frontend", "utils", "donate.js");
 
 function check(name, passed, failMsg) {

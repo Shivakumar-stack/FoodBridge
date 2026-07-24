@@ -10426,69 +10426,6 @@ body:not(.dashboard-page) {
 
 
 /* --- Utility Polyfills for Donate Page --- */
-.hidden {
-  display: none !important;
-}
-
-.lg\:hidden {
-  display: none !important;
-}
-
-@media (max-width: 1023px) {
-  .lg\:hidden {
-    display: block !important;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:hidden {
-    display: none !important;
-  }
-
-  .lg\:flex {
-    display: flex !important;
-  }
-
-  .lg\:block {
-    display: block !important;
-  }
-
-  .lg\:grid {
-    display: grid !important;
-  }
-}
-
-.bg-white\/95 {
-  background-color: rgba(255, 255, 255, 0.95) !important;
-}
-
-.bg-white\/80 {
-  background-color: rgba(255, 255, 255, 0.8) !important;
-}
-
-.bg-white\/50 {
-  background-color: rgba(255, 255, 255, 0.5) !important;
-}
-
-.bg-slate-50\/50 {
-  background-color: rgba(248, 250, 252, 0.5) !important;
-}
-
-.bg-slate-50\/80 {
-  background-color: rgba(248, 250, 252, 0.8) !important;
-}
-
-.bg-emerald-500\/10 {
-  background-color: rgba(16, 185, 129, 0.1) !important;
-}
-
-.bg-emerald-600\/10 {
-  background-color: rgba(5, 150, 105, 0.1) !important;
-}
-
-.ring-emerald-500\/10 {
-  --tw-ring-color: rgba(16, 185, 129, 0.1) !important;
-}
 
 /* Sticky Bar Mobile Specifics */
 .donate-mobile-sticky {

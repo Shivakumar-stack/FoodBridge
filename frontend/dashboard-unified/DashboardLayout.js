@@ -65,12 +65,14 @@ if (!ensureDashboardSession()) {
       main.classList.toggle("sidebar-collapsed", !sidebarOpen);
       overlay.classList.remove("show");
       overlay.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
     } else {
       sidebar.classList.toggle("collapsed", !sidebarOpen);
       sidebar.classList.toggle("mobile-open", sidebarOpen);
       main.classList.add("sidebar-collapsed");
       overlay.classList.toggle("show", sidebarOpen);
       overlay.setAttribute("aria-hidden", String(!sidebarOpen));
+      document.body.style.overflow = sidebarOpen ? "hidden" : "";
     }
 
     toggles.forEach((toggle) => {
@@ -125,6 +127,15 @@ if (!ensureDashboardSession()) {
       isDesktop = nextDesktop;
       sidebarOpen = isDesktop;
       syncSidebarState();
+    }
+  });
+
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !isDesktop && sidebarOpen) {
+      sidebarOpen = false;
+      syncSidebarState();
+      const toggle = document.querySelector("[data-sidebar-toggle]");
+      if (toggle) toggle.focus();
     }
   });
 
